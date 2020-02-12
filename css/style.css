@@ -1375,6 +1375,7 @@ max-width: 71%;
 .header-profile{
   background-color: #0670B4;
   border-radius: 0;
+  padding: 0;
 }
 .btn-link.profile{
   font-size: 16px;
