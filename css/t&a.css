@@ -137,7 +137,7 @@
 .btn-save-table{
     background-color: #00A2BF;
     border-radius: 0;
-    background-image: url(../img/ta/ico-save.png);
+    background-image: url(../svg/save.svg);
     background-repeat: no-repeat;
     background-position: center;
     width: 40px;
@@ -147,7 +147,7 @@
 .btn-edit-table{
     background-color: #2FAC00;
     border-radius: 0;
-    background-image: url(../img/ta/ico-submit.png);
+    background-image: url(../svg/submit.svg);
     background-repeat: no-repeat;
     background-position: center;
     width: 40px;
