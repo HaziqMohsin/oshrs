@@ -1,22 +1,6 @@
 *{
     font-family: 'Poppins', sans-serif;
 }
-.background-cover{
-    background-image: url(../img/ta/banner-img-tna.png);
-    background-size: contain;
-    background-position: top;
-    background-repeat: no-repeat;
-    width: 100%;
-    position: relative;
-}
-.background-cover::before{
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 100%;
-    top: 0;
-    background-color: rgba(225,225,225,0.7);
-}
 .icon-oval p{
     margin-top: 10px;
 }

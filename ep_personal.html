@@ -6,16 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <title>Corazon 2.0 | Payslip Dashboard</title>
+    <title>Corazon 2.0 | Employee Profile - Personal Info</title>
     
     <!-- CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="css/payslip.css" type="text/css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="/plugins/bootstrap/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
 
     <!-- CSS -->
     
@@ -31,7 +29,7 @@
     <!-- font awsome icons -->
 </head>
 
-<body class="background-cover payslip-bg background-overlay-before">
+<body class="background-cover ta-bg">
     <!--********************************* NAVBAR *********************************-->
     <nav class="navbar navbar-expand navbar-dark flex-column flex-md-row top-navbar-fixed">
         <a class="navbar-brand logo-corazon" href="#"><img src="svg/logo.svg" title="Corazon 2.0"></a>
@@ -110,21 +108,23 @@
                 </form>
                 <!-- profile dropdown & notification -->
             </div>
-    </nav>
+        </nav>
         <!--********************************* NAVBAR *********************************-->
         
+        <!--*********************************Section 1*********************************-->
+    </section>
     <div class="container-fluid">
         <div class="row flex-xl-nowrap">
             
             <!-- left-side-menu -->
-            <div class="col-12 col-md-auto col-xl-auto p-0 bd-sidebar left-sidebar-fixed payslip">
+            <div class="col-12 col-md-auto col-xl-auto p-0 bd-sidebar left-sidebar-fixed profile">
                 <div class="vertical-block-top">
                     <ul style="text-align: center;">
-                        <i class="icon-payslip"></i>
+                        <li><img src="svg/profile.svg"></li>
                     </ul>
                 </div>
                 <div class="vertical-block">
-                    <h6>Payslip</h6>
+                    <h6>Employee Profile</h6>
                 </div>
                 <hr class="hr-line">
                 <div class="vertical-block-bottom">
@@ -144,142 +144,121 @@
             
             
             <main class="col-12 col-md-12 col-xl-12 bd-content" role="main">
-                <!-- accordian tab function -->
-                <div class="row row-tab-function">
+                <!-- carousel slider -->
+                <div class="row">
                     <div class="col-lg-11 mx-auto">
-                        <div class="special-text ps-special-text">
-                            <h2>My Payslip Summary </h2>
-                            
-                            <!-- Hidden Content -->
-                            <div class="container">
-                                <div class="row pb-3">
-                                   <div class="container payslip-summary-section">
-                                        <div class="select-month-section">
-                                            <p>Select Month</p>
-                                            <select class="form-control form-control-select" id="exampleFormControlSelect1">
-                                                <option>January</option>
-                                                <option>February</option>
-                                                <option>March</option>
-                                                <option>April</option>
-                                                <option>May</option>
-                                                <option>June</option>
-                                                <option>July</option>
-                                                <option>August</option>
-                                                <option>September</option>
-                                                <option>October</option>
-                                                <option>November</option>
-                                                <option>December</option>
-                                            </select>
-                                            <div class="">
-                                                <p>Total Salary Amount</p>
-                                                <h2>$3000.00</h2>
-                                            </div>
-                                            
+                        <div class="text-center my-3">
+                            <div class="carousel-inner" role="listbox">
+                                <div class="row">
+                                    <div class="container flex-box">
+                                        <div class="">
+                                            <span class="icon-oval">
+                                                <a href=""><span class="oval-big oval-profile active"><h4>Personal Information </h4></span></a>
+                                            </span>
                                         </div>
                                         <div class="">
-                                            <p>Salary Breakdown</p>
-                                            <table class="table-bordered table-salary-breakdown">
-                                                <tr>
-                                                    <td rowspan="2" class="gross-salary">
-                                                        <p>Gross Salary</p>
-                                                        <h4>$2850.00</h4>
-                                                    </td>
-                                                    <td class="sales">
-                                                        <p>Sales Commision</p>
-                                                        <h4>$2850.00</h4>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="income-taxes">
-                                                        <p>Income Taxes</p>
-                                                        <h4>$2850.00</h4>
-                                                    </td>
-                                                </tr>
-                                            </table>
+                                            <span class="icon-oval">
+                                                <a href="ep_employee.html"><span class="oval-big oval-profile"><h4>Employee Information</h4></span></a>
+                                            </span>
                                         </div>
-                                   </div>
+                                        <div class="">
+                                            <span class="icon-oval">
+                                                <a href="ep_work_experience.html"><span class="oval-big oval-profile"><h4>Work Experience</h4></span></a>
+                                            </span>
+                                        </div>
+                                        <div class="">
+                                            <span class="icon-oval">
+                                                <a href="ep_education_background.html"><span class="oval-big oval-profile"><h4>Education Background</h4></span></a>
+                                            </span>
+                                        </div>
+                                        <div class="">
+                                            <span class="icon-oval">
+                                                <a href="ep_account.html"><span class="oval-big oval-profile"><h4>Accounts</h4></span></a>
+                                            </span>
+                                        </div>
+                                        <div class="">
+                                            <span class="icon-oval">
+                                                <a href="ep_family_beneficiary.html"><span class="oval-big oval-profile"><h4>Family & Beneficiary</h4></span></a>
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <!-- Hidden Content -->
                         </div>
                     </div>
-                    <button class="expand-button">
-                       More <br><i class="fa fa-angle-double-down" aria-hidden="true"></i>
-                    </button> 
                 </div>
-
+                <!-- carousel slider -->
+                
+                
+                <!-- accordian tab function -->
                 <div class="row">
-                    <div class="container container-efilling">
-                        <img src="/svg/efiling.svg" alt="EFILING"/>
-                        <a href="https://www.incometaxindia.gov.in/Pages/tools/tds-calculator.aspx" target="_blank">Click here to TDS Calculator <i class="fa fa-angle-double-right"></i></a>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="container container-table-payslip">
-                        <div class="select-range-container">
-                            <p>Select Range</p>
-                            <input type="text" class="form-control form-date" id="datePickerFrom">
-                            <small>to</small>
-                            <input type="text" class="form-control form-date" id="datePickerTo">
-                        </div>
-                        <div class="">
-                            <table class="table table-payslip table-striped">
-                                <thead>
-                                    <tr>
-                                        <th><input type="checkbox" class="check" id="checkAll">  Select All</th>
-                                        <th>Year</th>
-                                        <th>Month</th>
-                                        <th>View</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <input type="checkbox" class="check">
-                                        </td>
-                                        <td>2020</td>
-                                        <td>January</td>
-                                        <td><button class="btn btn-view"></button></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input type="checkbox" class="check">
-                                        </td>
-                                        <td>2019</td>
-                                        <td>December</td>
-                                        <td><button class="btn btn-view"></button></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input type="checkbox" class="check">
-                                        </td>
-                                        <td>2019</td>
-                                        <td>November</td>
-                                        <td><button class="btn btn-view"></button></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input type="checkbox" class="check">
-                                        </td>
-                                        <td>2019</td>
-                                        <td>October</td>
-                                        <td><button class="btn btn-view"></button></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="btn-download-section">
-                            <button type="button" class="btn btn-download btnDownload" disabled>Download</button>
+                    <div class="col-lg-11 mx-auto">
+                        <div class="accordion" id="accordionExample">
+                            <div class="card card-profile">
+                                <div class="card-header header-profile" id="headingOne">
+                                    <h2 class="mb-0">
+                                         <button class="btn btn-link profile" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                             <img src="/svg/profile.svg"> Profile
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-profile">
+                                <div class="card-header header-profile" id="headingTwo">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link profile collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Address
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-profile">
+                                <div class="card-header header-profile" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link profile collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Supporting Documents
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-profile">
+                                <div class="card-header header-profile" id="headingFour">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link profile collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                            Contact Details
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <!-- accordian tab function -->
+                
             </main>
             
             
             <div class="d-xl-block col-md-auto col-xl-auto p-0 right-sidebar-fixed">
-                
                 <div class="tab-button-list">
                     
                     <a class="dashboard-btn leave">
@@ -290,8 +269,8 @@
                         <p>Dashboard <img src="svg/dashboard-white.svg"></p>
                     </a>
                     
-                    <a class="dashboard-btn profile">
-                        <p>Profile <img src="svg/profile.svg"></p>
+                    <a class="dashboard-btn active">
+                        <p>Profile <img src="svg/profile-dark.svg"></p>
                     </a>
                     
                     <a class="dashboard-btn expense">
@@ -306,13 +285,14 @@
                         <p>Overtime <img src="svg/overtime.svg"></p>
                     </a>
                     
-                    <a class="dashboard-btn active">
-                        <p>Payslip <img src="svg/file-dark.svg"></p>
+                    <a class="dashboard-btn payslip">
+                        <p>Payslip <img src="svg/file (7).svg"></p>
                     </a>
                 </div>                
             </div> 
         </div>
     </div>
+</section>
 <!--*********************************Section 1*********************************-->
 
 <footer class="footer fixed-bottom-footer">
@@ -406,13 +386,16 @@
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"
 integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 crossorigin="anonymous"></script>
+<script type="text/javascript"  src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"
+integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="
+crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
 integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
 crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+crossorigin="anonymous"></script>
 <!-- <script src="/plugins/moment/moment.js"></script>
 <script src="/plugins/bootstrap/js/bootstrap-datetimepicker.js"></script> -->
 
@@ -464,85 +447,7 @@ crossorigin="anonymous"></script>
 </script>
 <!-- Forgot password hide/show -->
 
-<!-- <script>
-    if (/Mobi/.test(navigator.userAgent)) {
-        // if mobile device, use native pickers
-        $(".date input").attr("type", "date");
-        $(".time input").attr("type", "time");
-    } else {
-        // if desktop device, use DateTimePicker
-        $("#datepicker").datetimepicker({
-            useCurrent: false,
-            format: "L",
-            showTodayButton: true,
-            icons: {
-                next: "fa fa-chevron-right",
-                previous: "fa fa-chevron-left",
-                today: 'todayText',
-            }
-        });
-        $("#timepicker").datetimepicker({
-            format: "LT",
-            icons: {
-                up: "fa fa-chevron-up",
-                down: "fa fa-chevron-down"
-            }
-        });
-    }
-</script> -->
 
-<!-- TALBE HIDE / SHOW -->
-<script>
-    $(document.body).on('click', '.btnTableDraft', function(){
-        $('.tableDraft').show();
-        $('.tablePendingApproval').hide();
-        $('.tableApproved').hide();
-    });
-
-    $(document.body).on('click', '.btnTablePendingApproval', function(){
-        $('.tableDraft').hide();
-        $('.tablePendingApproval').show();
-        $('.tableApproved').hide();
-    });
-
-    $(document.body).on('click', '.btnTableApproved', function(){
-        $('.tableDraft').hide();
-        $('.tablePendingApproval').hide();
-        $('.tableApproved').show();
-    });
-</script>
-
-<!-- CALENDAR VIEW -->
-<script>
-   $(function () {
-        $('#datePickerFrom').datepicker();
-        $('#datePickerTo').datepicker();
-        // $("#datePickerFrom").on("dp.change", function (e) {
-        //     $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
-        // });
-        // $("#datePickerTo").on("dp.change", function (e) {
-        //     $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
-        // });
-    });
-</script>
-
-<script>
-    $("#checkAll").click(function () {
-        $(".check").prop('checked', $(this).prop('checked'));
-    });
-</script>
-
-<script>
-    $(function() {
-        $('.check').click(function() {
-            if ($('.check').is(':checked')) {
-                $('.btnDownload').removeAttr('disabled');
-            } else {
-                $('.btnDownload').attr('disabled', 'disabled');
-            }
-        });
-    });
-</script>
 
 </body>
 

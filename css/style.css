@@ -263,39 +263,46 @@ box-shadow: -6px 0px 14px 0px rgba(0,0,0,0.33);
 
 .dashboard-btn.dashboard 
 {
-  background-color: #0670B4;
+  background: rgb(6,112,180);
+  background: linear-gradient(336deg, rgba(6,112,180,1) 0%, rgba(58,125,168,1) 100%);
   color: #fff !important;
 }
 
 .dashboard-btn.profile {
-    background-color: #E6A475;
+    background: rgb(230,164,117);
+    background: linear-gradient(141deg, rgba(230,164,117,1) 0%, rgba(235,154,93,0.75) 100%);
     color: #fff !important;
     text-decoration: none;
   }
 
   .dashboard-btn.leave {
-    background-color: #49C5B6;
+    background: rgb(98,200,188);
+    background: linear-gradient(360deg, rgba(98,200,188,1) 0%, rgba(69,180,167,0.8) 100%);
     color: #fff !important;
   }
   
 
   .dashboard-btn.expense {
-    background-color: #7677F7;
+    background: rgb(118,119,247);
+    background: linear-gradient(141deg, rgba(118,119,247,1) 0%, rgba(96,99,219,0.75) 100%);
     color: #fff !important;
   }
 
   .dashboard-btn.ta {
-    background-color: #EABD4E;
+    background: rgb(245,201,92);
+    background: linear-gradient(141deg, rgba(245,201,92,1) 0%, rgba(180,172,68,0.75) 100%);
     color: #fff !important;
   }
 
   .dashboard-btn.overtime {
-    background-color: #6bb97c;
+    background: rgb(208,118,205);
+    background: linear-gradient(141deg, rgba(208,118,205,0.75) 0%, rgba(143,74,139,0.82) 100%);
     color: #fff !important;
   }
 
   .dashboard-btn.payslip {
-    background-color: #54C1D5;
+    background: rgb(146,189,233);
+    background: linear-gradient(141deg, rgba(146,189,233,1) 0%, rgba(68,125,181,0.8) 100%);
     color: #fff !important;
   }
 
@@ -491,6 +498,10 @@ background: #49C5B6;
 {
 background: #6BB97C;
 }
+.left-sidebar-fixed.profile
+{
+background: #E6A475;
+}
 
 .left-sidebar-fixed.leave h6{
   top: 75px;
@@ -498,6 +509,11 @@ background: #6BB97C;
 
 .left-sidebar-fixed.overtime h6{
   top: 75px;
+}
+.left-sidebar-fixed.profile h6{
+    top: 136px;
+    width: 100%;
+    left: 19px; 
 }
 
 .info-board li {
@@ -597,11 +613,35 @@ box-shadow: 0px 0px 14px 3px rgba(0,0,0,0.25);
   height: 100vh;
 }
 
+.ta-bg{
+  background-image: url(../img/ta-bg.jpg);
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.payslip-bg{
+  background-image: url(../img/payslip-bg.jpg);
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.background-overlay-before::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 50vh;
+    top: 0;
+    background-color: rgba(225,225,225,0.5);
+}
+
 .background-overlay {
   background: rgba(255, 255, 255, 0.25);
   max-height: 577px;
   height: 475px;
-
   overflow: hidden;
   overflow-y: auto;
 }
@@ -765,7 +805,11 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.39);
 .icon-oval p {
   font-size: 16px;
 }
-
+.flex-box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 .oval-big
 {
     width: 75px;
@@ -776,23 +820,44 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.39);
     vertical-align: middle;
     text-align: center;
     border: 1px solid rgb(149, 152, 154, 0.12);
-  }
-
-  .oval-small
-  {
-    width: 24px;
-    height: 24px;
+}
+.oval-big.oval-profile
+{
+    width: 120px;
+    height: 120px;
+    background: #FBFBFB;
     border-radius: 50%;
-    background: rgba(251, 251, 251, 0.75);
-    /* border: 1px solid rgb(149, 152, 154, 0.12); */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    right: -14px;
-    bottom: -7px;
-    font-size: 12px;
-  }
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    border: 1px solid rgb(149, 152, 154, 0.12);
+}
+.oval-big.oval-profile.active{
+  background: #0670B4;
+}
+.oval-big.oval-profile h4{
+  font-size: 16px;
+  color: #0670B4;
+}
+.oval-big.oval-profile.active h4{
+  color: #FFF;
+}
+
+.oval-small
+{
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgba(251, 251, 251, 0.75);
+  /* border: 1px solid rgb(149, 152, 154, 0.12); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -14px;
+  bottom: -7px;
+  font-size: 12px;
+}
 
 
 
@@ -1270,4 +1335,17 @@ max-width: 71%;
 									   from(rgb(209, 209, 209)),
 									   to(rgb(212, 212, 212)),
 									   color-stop(.6,rgb(221, 221, 221)))
+}
+.card-profile{
+  border-radius: 0;
+}
+.header-profile{
+  background-color: #0670B4;
+  border-radius: 0;
+}
+.btn-link.profile{
+  font-size: 16px;
+  color: #FFF;
+  width: 100%;
+  text-align: left;
 }
