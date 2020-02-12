@@ -145,7 +145,7 @@
             
             <main class="col-12 col-md-12 col-xl-12 bd-content" role="main">
                 <div class="leave-info">
-                    <h3>My T&A as of <span><input type="text" id="viewCalendar" class="form-transparent" value="4 Feb 2020" readonly/></span> <img class="openCalendar" src="svg/datepik-main.svg"></h3>
+                    <h3>My T&A as of <span><input type="text" id="viewCalendar" class="form-transparent" value="4 Feb 2020"/></span> <img class="openCalendar" src="svg/datepik-main.svg"></h3>
                 </div>
                 
                 <!-- carousel slider -->
@@ -581,8 +581,8 @@
 <!-- Modal for Edit profile Pic -->
 
 <!-- SCRIPT -->
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 crossorigin="anonymous"></script>
 <script type="text/javascript"  src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"
 integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="
@@ -591,6 +591,9 @@ crossorigin="anonymous"></script>
 integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
 crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="/plugins/moment/moment.js"></script>
+<script src="/plugins/bootstrap/js/bootstrap-datetimepicker.js"></script>
+
 <!-- SCRIPT -->
 
 
@@ -690,7 +693,10 @@ crossorigin="anonymous"></script>
 <!-- CALENDAR VIEW -->
 <script>
     $('.openCalendar').on('click',function (){  
-        $('#viewCalendar').datepicker();
+        $('#viewCalendar').datetimepicker({
+            format: 'LT'
+        });
+       
     });
 </script>
 
