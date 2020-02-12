@@ -183,6 +183,10 @@
     -webkit-appearance: none;
     font-weight: 900;
     width: 200px;
+    background-image: url(../svg/datepik-main.svg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    cursor: pointer;
 }
 .status-icon-tna{
     display: flex;

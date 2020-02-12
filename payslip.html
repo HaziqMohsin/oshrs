@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/payslip.css" type="text/css">
     <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="/plugins/bootstrap/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
     <!-- CSS -->
     
@@ -217,9 +219,9 @@
                     <div class="container container-table-payslip">
                         <div class="select-range-container">
                             <p>Select Range</p>
-                            <input type="text" class="form-control form-date">
+                            <input type="text" class="form-control form-date" id="datePickerFrom">
                             <small>to</small>
-                            <input type="text" class="form-control form-date">
+                            <input type="text" class="form-control form-date" id="datePickerTo">
                         </div>
                         <div class="">
                             <table class="table table-payslip table-striped">
@@ -411,8 +413,8 @@ crossorigin="anonymous"></script>
 integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="/plugins/moment/moment.js"></script>
-<script src="/plugins/bootstrap/js/bootstrap-datetimepicker.js"></script>
+<!-- <script src="/plugins/moment/moment.js"></script>
+<script src="/plugins/bootstrap/js/bootstrap-datetimepicker.js"></script> -->
 
 <!-- SCRIPT -->
 
@@ -511,15 +513,18 @@ crossorigin="anonymous"></script>
 </script>
 
 <!-- CALENDAR VIEW -->
-<!-- <script>
-    $(document.body).on('click', '.openCalendar', function (){  
-        $('#viewCalendar').datetimepicker({
-            format: 'L',
-            useCurrent: false,
-            // minDate: minDateToday
-        });
+<script>
+   $(function () {
+        $('#datePickerFrom').datepicker();
+        $('#datePickerTo').datepicker();
+        // $("#datePickerFrom").on("dp.change", function (e) {
+        //     $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
+        // });
+        // $("#datePickerTo").on("dp.change", function (e) {
+        //     $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
+        // });
     });
-</script> -->
+</script>
 
 <script>
     $("#checkAll").click(function () {

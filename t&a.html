@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/t&a.css" type="text/css">
     <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
 
     <!-- CSS -->
     
@@ -145,7 +147,7 @@
             
             <main class="col-12 col-md-12 col-xl-12 bd-content" role="main">
                 <div class="leave-info">
-                    <h3>My T&A as of <span><input type="text" id="viewCalendar" class="form-transparent" value="4 Feb 2020"/></span> <img class="openCalendar" src="svg/datepik-main.svg"></h3>
+                    <h3>My T&A as of <span><input type="text" id="viewCalendar" class="form-transparent" value="4 Feb 2020" readonly/></span></h3>
                 </div>
                 
                 <!-- carousel slider -->
@@ -591,8 +593,8 @@ crossorigin="anonymous"></script>
 integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
 crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="/plugins/moment/moment.js"></script>
-<script src="/plugins/bootstrap/js/bootstrap-datetimepicker.js"></script>
+<!-- <script src="/plugins/moment/moment.js"></script>
+<script src="/plugins/bootstrap/js/bootstrap-datetimepicker.js"></script> -->
 
 <!-- SCRIPT -->
 
@@ -642,7 +644,7 @@ crossorigin="anonymous"></script>
 </script>
 <!-- Forgot password hide/show -->
 
-<script>
+<!-- <script>
     if (/Mobi/.test(navigator.userAgent)) {
         // if mobile device, use native pickers
         $(".date input").attr("type", "date");
@@ -667,7 +669,7 @@ crossorigin="anonymous"></script>
             }
         });
     }
-</script>
+</script> -->
 
 <!-- TALBE HIDE / SHOW -->
 <script>
@@ -692,13 +694,12 @@ crossorigin="anonymous"></script>
 
 <!-- CALENDAR VIEW -->
 <script>
-    $('.openCalendar').on('click',function (){  
-        $('#viewCalendar').datetimepicker({
-            format: 'LT'
-        });
-       
+   $(function () {
+        $('#viewCalendar').datepicker();
     });
 </script>
+
+
 
 
 </body>
