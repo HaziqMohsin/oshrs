@@ -631,6 +631,22 @@ box-shadow: 0px 0px 14px 3px rgba(0,0,0,0.25);
   height: 100vh;
   position: relative;
 }
+.profile-bg{
+  background-image: url(../img/employer-bg.jpg);
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+.expenses-bg{
+  background-image: url(../img/expenses-bg.jpg);
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
 .background-overlay-before::before{
     position: absolute;
     content: '';

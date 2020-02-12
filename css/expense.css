@@ -1,10 +1,10 @@
 *{
-    font-family: Poppins;
+    font-family: 'Poppins' sans-serif;
 }
-.background-cover{
+/* .background-cover{
     background-image: url(../img/ta/banner-img-tna.png);
     background-size: contain;
-    /* background-size: cover; */
+    background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
     width: 100%;
@@ -22,7 +22,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-}
+} */
 .expense_value > h4{
     color: #0670B4;
     font-size: 21px;
