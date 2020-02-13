@@ -190,70 +190,84 @@
                 <!-- carousel slider -->
                 
                 
-                <!-- accordian tab function -->
-                <div class="row">
-                    <div class="col-lg-11 mx-auto">
-                        <div class="accordion" id="accordionExample">
-                            <div class="card card-profile">
-                                <div class="card-header header-profile" id="headingOne">
-                                    <h2 class="mb-0">
-                                         <button class="btn btn-link profile" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                             <img src="/svg/profile.svg"> Profile
-                                        </button>
-                                    </h2>
-                                </div>
-                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                    </div>
-                                </div>
+                 <!-- Familytab function -->
+                 <div class="row">
+                    <div class="col-lg-9 mx-auto">
+                        <div class="ac-title">
+                            <img src="/img/ep/file-invoice-dollar.png" class="ac-uni" alt="">
+                            <span>Family & Beneficiary</span>
+                            <img src="/img/ep/previous@2x.png" class="ac-uni-add" alt="">
+                        </div>
+                        <div class="row ac-body">
+                            
+                            <div class="col-md-12">
+                                <table class="table table-borderless">
+                                    <thead>
+                                        <tr>
+                                            <th>Full Name</th>
+                                            <th>Relationship</th>
+                                            <th>Contact No</th>
+                                            <th>Address</th>
+                                            <th>Disability</th>
+                                            <th>Edit/Remove</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Oliver Michael</td>
+                                            <td>Father</td>
+                                            <td>012-3456 789</td>
+                                            <td>No 1, Jalan Puncak…</td>
+                                            <td>No</td>
+                                            <td>
+                                                <img src="/img/ep/editAccount@2x.png" class="editAccount">
+                                                <img src="/img/ep/deleteAccount@2x.png" class="deleteAccount">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Oliver Michael</td>
+                                            <td>Father</td>
+                                            <td>012-3456 789</td>
+                                            <td>No 1, Jalan Puncak…</td>
+                                            <td>No</td>
+                                            <td>
+                                                <img src="/img/ep/editAccount@2x.png" class="editFamily">
+                                                <img src="/img/ep/deleteAccount@2x.png" class="deleteFamily">
+                                            </td>
+                                        </tr>
+                                        <tr class="account-form">
+                                            <td><input type="text" class="form-control" class="fullName"></td>
+                                            <td>
+                                                <select class="form-control form-control-select" id="exampleFormControlSelect1">
+                                                    <option>Father</option>
+                                                </select>
+                                            </td>
+                                            <td><input type="text" class="form-control" class="contactNo"></td>
+                                            <td><input type="text" class="form-control" class="address"></td>
+                                            <td>
+                                                <select class="form-control form-control-select" id="exampleFormControlSelect1">
+                                                    <option>Yes</option>
+                                                    <option>No</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <img src="/img/ep/deleteAccount@2x.png" class="deleteFamily">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
-                            <div class="card card-profile">
-                                <div class="card-header header-profile" id="headingTwo">
-                                    <h2 class="mb-0">
-                                        <button class="btn btn-link profile collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                            Address
-                                        </button>
-                                    </h2>
-                                </div>
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                    </div>
-                                </div>
+                            <div class="col-lg-2">
+                                <button type="button" class="btn btn-add">Add Family Members</button>
                             </div>
-                            <div class="card card-profile">
-                                <div class="card-header header-profile" id="headingThree">
-                                    <h2 class="mb-0">
-                                        <button class="btn btn-link profile collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                            Supporting Documents
-                                        </button>
-                                    </h2>
-                                </div>
-                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card card-profile">
-                                <div class="card-header header-profile" id="headingFour">
-                                    <h2 class="mb-0">
-                                        <button class="btn btn-link profile collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                            Contact Details
-                                        </button>
-                                    </h2>
-                                </div>
-                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                    </div>
-                                </div>
-                            </div>
+                        </div>
+                        <div class="row ac-add" style="display: none;">
+                            
                         </div>
                     </div>
                 </div>
-                <!-- accordian tab function -->
+                
+                <!-- account tab function -->
                 
             </main>
             

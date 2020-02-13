@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/ep/account.css" type="text/css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
 
@@ -92,7 +93,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle toggle-icon" href="#" id="navbarDropdownMenuLink"
                         role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img src="img/profile.png" width="40" height="40" class="rounded-circle"> Johny Vino
+                        <img src="img/profile.png" width="40" height="40" class="roundac-circle"> Johny Vino
                     </a>
                     <div class="dropdown-menu profile-dropdown" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="#">Account</a>
@@ -190,70 +191,65 @@
                 <!-- carousel slider -->
                 
                 
-                <!-- accordian tab function -->
+                <!-- account tab function -->
                 <div class="row">
-                    <div class="col-lg-11 mx-auto">
-                        <div class="accordion" id="accordionExample">
-                            <div class="card card-profile">
-                                <div class="card-header header-profile" id="headingOne">
-                                    <h2 class="mb-0">
-                                         <button class="btn btn-link profile" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                             <img src="/svg/profile.svg"> Profile
-                                        </button>
-                                    </h2>
-                                </div>
-                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                    </div>
-                                </div>
+                    <div class="col-lg-9 mx-auto">
+                        <div class="ac-title">
+                            <img src="/img/ep/file-invoice-dollar.png" class="ac-uni" alt="">
+                            <span>Accounts</span>
+                            <img src="/img/ep/previous@2x.png" class="ac-uni-add" alt="">
+                        </div>
+                        <div class="row ac-body">
+                            
+                            <div class="col-md-12">
+                                <table class="table table-borderless">
+                                    <thead>
+                                        <tr>
+                                            <th>Account Type</th>
+                                            <th>Account Name</th>
+                                            <th>Account No</th>
+                                            <th>Edit/Remove</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Bank</td>
+                                            <td>John Michael</td>
+                                            <td>1234567890</td>
+                                            <td>
+                                                <img src="/img/ep/editAccount@2x.png" class="editAccount">
+                                                <img src="/img/ep/deleteAccount@2x.png" class="deleteAccount">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bank</td>
+                                            <td>John Michael</td>
+                                            <td>1234567890</td>
+                                            <td>
+                                                <img src="/img/ep/editAccount@2x.png" class="editAccount">
+                                                <img src="/img/ep/deleteAccount@2x.png" class="deleteAccount">
+                                            </td>
+                                        </tr>
+                                        <tr class="account-form">
+                                            <td><input type="text" class="form-control" class="acType"></td>
+                                            <td><input type="text" class="form-control" class="acName"></td>
+                                            <td><input type="text" class="form-control" class="acNo"></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
-                            <div class="card card-profile">
-                                <div class="card-header header-profile" id="headingTwo">
-                                    <h2 class="mb-0">
-                                        <button class="btn btn-link profile collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                            Address
-                                        </button>
-                                    </h2>
-                                </div>
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                    </div>
-                                </div>
+                            <div class="col-lg-2">
+                                <button type="button" class="btn btn-add">Add Accounts</button>
                             </div>
-                            <div class="card card-profile">
-                                <div class="card-header header-profile" id="headingThree">
-                                    <h2 class="mb-0">
-                                        <button class="btn btn-link profile collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                            Supporting Documents
-                                        </button>
-                                    </h2>
-                                </div>
-                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card card-profile">
-                                <div class="card-header header-profile" id="headingFour">
-                                    <h2 class="mb-0">
-                                        <button class="btn btn-link profile collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                            Contact Details
-                                        </button>
-                                    </h2>
-                                </div>
-                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                    </div>
-                                </div>
-                            </div>
+                        </div>
+                        <div class="row ac-add" style="display: none;">
+                            
                         </div>
                     </div>
                 </div>
-                <!-- accordian tab function -->
+                
+                <!-- account tab function -->
                 
             </main>
             
@@ -295,7 +291,7 @@
 </section>
 <!--*********************************Section 1*********************************-->
 
-<footer class="footer fixed-bottom-footer">
+<footer class="footer fixac-bottom-footer">
     <div class="container">
         <p class="footer-text m-0">Copyright ©2020 Corazon 2.0.0 | Powered by <span><a href="#">OSHRS</a></span></p>
     </div>
