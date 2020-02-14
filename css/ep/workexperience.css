@@ -1,0 +1,122 @@
+*{
+    font-family: 'Poppins';
+}
+.ed-title{
+    position: relative;
+    background-color:#0670B4;
+    width: 100%;
+    height: 40px;
+    vertical-align: middle;
+    padding-top: 7px;
+}
+
+.ed-title .ed-uni{
+    float: left;
+    padding-left: 20px;
+}
+
+.ed-title .ed-uni-add{
+    float: right;
+    margin-top:3px;
+    padding-right: 10px;
+    width: 3%;
+    height: 63%;
+}
+
+.ed-title span{
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.ed-body, .ed-add{
+    background-color: #F5F5F5;
+    margin: 0;
+    padding: 0 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.ed-body::after{
+    content: ""; 
+    display: block; 
+    margin: 0 auto; 
+    width: 96%; 
+    padding-top: 30px; 
+    border-bottom: 1px solid #D0D0D0;
+}
+
+.ed-body span{
+    display: block;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.ed-body .click-edit{
+    float: right;
+    padding-top: 10px;
+}
+
+.ed-body .big-uni{
+    padding-top: 15px;
+}
+
+.ed-body span:nth-child(2){
+    color: #2C2C2C;
+    font-weight: bold;
+}
+
+.ed-body span:nth-child(3){
+    color: #2C2C2C;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 0;
+}
+.ed-body span:nth-child(4),.ed-body span:nth-child(5){
+    color: #7C7C7C;
+    margin-top: 0;
+}
+.ed-body span:last-child{
+    text-align: justify;
+    color: #2C2C2C;
+}
+
+.btn-save{
+    background-color: #2FAC00;
+    color: #FFF;
+    font-size: 16px;
+    border-radius: 0;
+    width: 140px;
+    height: 42px;
+    background-image: url(../../img/expense/save.png);
+    background-repeat: no-repeat;
+    background-position: center left 20px;
+    padding-left: 20px;
+}
+
+.ed-add span{
+    color: #2C2C2C;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    display: block
+}
+
+.ed-add input{
+    height: 32px;
+    width: 100%;
+    border: 0.6px solid #c5c5c5;
+    border-radius: 0;
+    font-size: 12px;
+    color: #000;
+}
+.work-li > li {
+    font-size: 16px;
+    color: #2C2C2C;
+    font-weight: 100;
+}
+.work-li {
+    padding-left: 18px;
+    margin-top: 10px;
+}
+

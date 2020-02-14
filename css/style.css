@@ -830,6 +830,9 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.39);
   justify-content: space-evenly;
   align-items: center;
 }
+.justify-flex-start{
+  justify-content: flex-start;
+}
 .oval-big
 {
     width: 75px;
