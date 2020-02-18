@@ -195,16 +195,16 @@
                 <div class="row">
                     <div class="col-lg-9 mx-auto">
                         <div class="ed-title">
-                            <img src="/img/ep/universityTitle.png" class="ed-uni" alt="">
+                            <img src="/svg/work.svg" class="ed-uni" alt="">
                             <span>Work Experience</span>
-                            <img src="/img/ep/add@2x.png" class="ed-uni-add clickAdd" alt="">
+                            <img src="/svg/plus-trans.svg" class="ed-uni-add clickAdd" alt="">
                         </div>
                         <div class="row ed-body">
                             <div class="col-md-1">
                                 <img class="big-uni" src="/svg/placeholder-company.svg"  alt="">
                             </div>
                             <div class="col-md-11">
-                                <img class="click-edit" class="clickEdit" src="/img/ep/edit.png"  alt="">
+                                <img class="click-edit" class="clickEdit" src="/svg/edit.svg"  alt="">
                                 <span class="edu-name">Web Designer</span>
                                 <span class="edu-major">ABC Company</span>
                                 <span class="edu-year">Jul 2017 - May 2019 | 1 yr 11 mos</span>
@@ -221,7 +221,7 @@
                                 <img class="big-uni" src="/svg/placeholder-company.svg"  alt="">
                             </div>
                             <div class="col-md-11">
-                                <img class="click-edit" class="clickEdit" src="/img/ep/edit.png"  alt="">
+                                <img class="click-edit" class="clickEdit" src="/svg/edit.svg"  alt="">
                                 <span class="edu-name">Web Designer</span>
                                 <span class="edu-major">ABC Company</span>
                                 <span class="edu-year">Jul 2017 - May 2019 | 1 yr 11 mos</span>
@@ -251,40 +251,44 @@
                                 <input type="text" value="" class="form-control" />
                             </div>
                             <div class="col-lg-6">
-                                <span>Start Date*</span>                               
-                                <div class="col-lg-6">
-                                    <select class="form-control form-control-select" id="exampleFormControlSelect1">
-                                        <option>January</option>
-                                    </select>
-                                </div>
-                                <div class="col-lg-6">
-                                    <select class="form-control form-control-select" id="exampleFormControlSelect1">
-                                        <option>2019</option>
-                                    </select>
+                                <span>Start Date*</span>
+                                <div  class="flex-box">
+                                    <div class="">
+                                        <select class="form-control form-control-select" id="exampleFormControlSelect1">
+                                            <option>January</option>
+                                        </select>
+                                    </div>
+                                    <div class="">
+                                        <select class="form-control form-control-select" id="exampleFormControlSelect1">
+                                            <option>2019</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <span>End Date*</span>
-                                <div class="col-lg-6">
-                                    <select class="form-control form-control-select" id="exampleFormControlSelect1">
-                                        <option>January</option>
-                                    </select>
-                                </div>
-                                <div class="col-lg-6">
-                                    <select class="form-control form-control-select" id="exampleFormControlSelect1">
-                                        <option>2019</option>
-                                    </select>
+                                <div class="flex-box">
+                                    <div class="">
+                                        <select class="form-control form-control-select" id="exampleFormControlSelect1">
+                                            <option>January</option>
+                                        </select>
+                                    </div>
+                                    <div class="">
+                                        <select class="form-control form-control-select" id="exampleFormControlSelect1">
+                                            <option>2019</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-lg-12 flex-box justify-flex-start">
+                            <div class="col-lg-12 checkbox-div">
                                 <input type="checkbox" id="">
-                                I am currently working in this role
+                                <p>I am currently working in this role</p>
                             </div>
                             <div class="col-lg-12">
                                 <span>Description</span>
                                 <input type="textarea" value="" class="form-control" />
                             </div>
-                            <div class="col-lg-2 mx-auto">
+                            <div class="col-lg-2 mx-auto button-save">
                                 <button type="button" class="btn btn-save">SAVE</button>
                             </div>
                         </div>
@@ -486,10 +490,10 @@ crossorigin="anonymous"></script>
 
 <script>
     $('.clickAdd').click(function(){
-        if ($(this).attr('src') == '/img/ep/stop@2x.png') {
-            $(this).attr('src','/img/ep/add@2x.png')
+        if ($(this).attr('src') == '/svg/stop.svg') {
+            $(this).attr('src','/svg/plus-trans.svg')
         } else {
-            $(this).attr('src','/img/ep/stop@2x.png')
+            $(this).attr('src','/svg/stop.svg')
         }
         
         $('.ed-body').toggle()  

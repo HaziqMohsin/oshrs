@@ -197,14 +197,14 @@
                         <div class="ed-title">
                             <img src="/img/ep/universityTitle.png" class="ed-uni" alt="">
                             <span>Education Background</span>
-                            <img src="/img/ep/add@2x.png" class="ed-uni-add clickAdd" alt="">
+                            <img src="/svg/plus-trans.svg" class="ed-uni-add clickAdd" alt="">
                         </div>
                         <div class="row ed-body">
                             <div class="col-md-1">
                                 <img class="big-uni" src="/img/ep/university.png"  alt="">
                             </div>
                             <div class="col-md-11">
-                                <img class="click-edit" class="clickEdit" src="/img/ep/edit.png"  alt="">
+                                <img class="click-edit" class="clickEdit" src="/svg/edit.svg"  alt="">
                                 <span class="edu-name">Cambridge</span>
                                 <span class="edu-major">Degree in IT</span>
                                 <span class="edu-year">2013 - 2015</span>
@@ -217,7 +217,7 @@
                                 <img class="big-uni" src="/img/ep/university.png"  alt="">
                             </div>
                             <div class="col-md-11">
-                                <img class="click-edit"  class="clickEdit" src="/img/ep/edit.png"  alt="">
+                                <img class="click-edit"  class="clickEdit" src="/svg/edit.svg"  alt="">
                                 <span class="edu-name">Cambridge</span>
                                 <span class="edu-major">Degree in IT</span>
                                 <span class="edu-year">2013 - 2015</span>
@@ -468,10 +468,10 @@ crossorigin="anonymous"></script>
 
 <script>
     $('.clickAdd').click(function(){
-        if ($(this).attr('src') == '/img/ep/stop@2x.png') {
-            $(this).attr('src','/img/ep/add@2x.png')
+        if ($(this).attr('src') == '/svg/stop.svg') {
+            $(this).attr('src','/svg/plus-trans.svg')
         } else {
-            $(this).attr('src','/img/ep/stop@2x.png')
+            $(this).attr('src','/svg/stop.svg')
         }
         
         $('.ed-body').toggle()  
