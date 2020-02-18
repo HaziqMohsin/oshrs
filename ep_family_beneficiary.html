@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/ep/account.css" type="text/css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
 
@@ -153,32 +154,32 @@
                                     <div class="container flex-box">
                                         <div class="">
                                             <span class="icon-oval">
-                                                <a href="ep_personal.html"><span class="oval-big oval-profile"><h4>Personal Information </h4></span></a>
+                                                <a href="ep_personal.html"><span class="oval-big oval-profile"><img src="/svg/ep-personal.svg"/></span></a>
                                             </span>
                                         </div>
                                         <div class="">
                                             <span class="icon-oval">
-                                                <a href="ep_employee.html"><span class="oval-big oval-profile"><h4>Employee Information</h4></span></a>
+                                                <a href="ep_employee.html"><span class="oval-big oval-profile"><img src="/svg/ep-employee.svg"/></span></a>
                                             </span>
                                         </div>
                                         <div class="">
                                             <span class="icon-oval">
-                                                <a href="ep_work_experience.html"><span class="oval-big oval-profile"><h4>Work Experience</h4></span></a>
+                                                <a href="ep_work_experience.html"><span class="oval-big oval-profile"><img src="/svg/ep-work.svg"/></span></a>
                                             </span>
                                         </div>
                                         <div class="">
                                             <span class="icon-oval">
-                                                <a href="ep_education_background.html"><span class="oval-big oval-profile"><h4>Education Background</h4></span></a>
+                                                <a href="ep_education_background.html"><span class="oval-big oval-profile"><img src="/svg/ep-education.svg"/></span></a>
                                             </span>
                                         </div>
                                         <div class="">
                                             <span class="icon-oval">
-                                                <a href="ep_account.html"><span class="oval-big oval-profile"><h4>Accounts</h4></span></a>
+                                                <a href="ep_account.html"><span class="oval-big oval-profile"><img src="/svg/ep-account.svg"/></span></a>
                                             </span>
                                         </div>
                                         <div class="">
                                             <span class="icon-oval">
-                                                <a href="javascript:void(0);"><span class="oval-big oval-profile active"><h4>Family & Beneficiary</h4></span></a>
+                                                <a href="javascript:void(0);"><span class="oval-big oval-profile active"><img src="/svg/ep-family.svg"/></span></a>
                                             </span>
                                         </div>
                                     </div>
@@ -395,6 +396,54 @@
     </div>
 </div>
 <!-- Modal for Edit profile Pic -->
+
+<!-- SAVE POPUP-->
+<div id="modalSave" class="modal fade modal-ep" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="/svg/save-icon.svg" style="margin-bottom: 33px; margin-top: 20px;"/>
+                <p>Are you sure you want to save change (s) that you did?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-save">SAVE</button>
+                <button type="button" class="btn btn-cancel" data-dismiss="modal">CANCEL</button>
+            </div>
+         </div>
+    </div>
+</div>
+
+<!-- THANK YOU POPUP-->
+<div id="modalThankyou" class="modal fade modal-ep thankyou-modal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="/svg/tick.svg" style="margin-bottom: 33px; margin-top: 20px;"/>
+                <h4>Thank You</h4>
+                <p>Thank you for updating your bank account details. Please note that the cut off date for this month’s payroll has already passed and your new account details will be use from next months’ payroll onwards</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-save">CONTINUE</button>
+            </div>
+         </div>
+    </div>
+</div>
+
+<!-- AGREEMENT POPUP-->
+<div id="modalAgreement" class="modal fade modal-ep agreement-modal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p>I, understand and agree that my personal bank account provided below will be used for those employment related issues such as salary payment expenses reimbursement. This information will be kept by both Human Resources and Accounting Department.</p>
+                <p>I also note that this data may be made available to any relevant governments departments/appropriate authorities such as Labour Department when[Name of Company] required to provide it under the relevant legalisation for use for the purposes of that legilasation. Furthermore, this data may be provided to any agent, contractor, or third party services provider for staff administration purposes.</p>
+                <div class="agreement-check">
+                    <input type="checkbox" class="" id="">
+                    <p>I confirm that the information given here is accurate.</p>
+                </div>
+            </div>
+         </div>
+    </div>
+</div>
 
 <!-- SCRIPT -->
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"

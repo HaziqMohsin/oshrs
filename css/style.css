@@ -1386,3 +1386,71 @@ max-width: 71%;
   width: 100%;
   text-align: left;
 }
+.modal-ep .modal-dialog {
+  margin: 9rem auto;
+  max-width: 323px;
+}
+.modal-ep .modal-content {
+  border-radius: 0;
+}
+.modal-ep .modal-body{
+  text-align: center;
+}
+.modal-ep .modal-footer {
+  border-top: 0;
+}
+.modal-ep .btn-save {
+  background-color: #2FAC00;
+  border-radius: 0;
+  color: #FFF;
+  width: 135px;
+}
+.modal-ep .btn-cancel {
+   border-radius: 0;
+   color: #6D6D6D;
+   width: 135px;
+   border: 1px solid #959595;
+}
+.thankyou-modal .modal-dialog {
+  max-width: 468px;
+}
+.thankyou-modal .modal-footer {
+  justify-content: center;
+}
+.thankyou-modal .modal-body {
+  text-align: center;
+  padding: 2rem;
+}
+.thankyou-modal .modal-body p {
+  text-align: left;
+}
+.thankyou-modal .modal-body h4 {
+  color: #0670B4;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.agreement-modal .modal-dialog {
+  max-width: 546px;
+}
+.agreement-modal .modal-body {
+  text-align: left;
+  padding: 2rem;
+}
+.agreement-modal .modal-body p {
+  font-size: 14px;
+  color: #6D6D6D;
+  font-weight: normal;
+}
+.agreement-modal .modal-body .agreement-check {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.agreement-modal .modal-body .agreement-check p {
+  margin-bottom: 0;
+  margin-left: 10px;
+  color: #2C2C2C;
+  font-size: 16px;
+}
