@@ -220,3 +220,6 @@ a.animated-button.thar-four{
 .table-striped.table-tna tbody tr:nth-of-type(even) {
     background-color: #F7FAFC;
 }
+.left-sidebar-fixed h6 {
+    top: 18px;
+}
