@@ -167,3 +167,6 @@
     background-color: #C1C1C1;
     transition: all .3s;
 }
+.left-sidebar-fixed h6 {
+    top: 50px;
+}
