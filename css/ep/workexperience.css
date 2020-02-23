@@ -1,3 +1,13 @@
+.icon-oval > p {
+    line-height: 20px;
+    margin-top: 10px;
+}
+.icon-oval.active > p {
+    color: #0670B4;
+}
+.flex-box > div {
+    width: 400px;
+}
 *{
     font-family: 'Poppins';
 }
