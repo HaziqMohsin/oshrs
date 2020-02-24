@@ -16,13 +16,21 @@
 }
 .first-row > div {
     position: relative;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.14);
+    background-color: #FAFAFA;
+    margin-bottom: 6.6px;
+    padding: 20px;
+    margin-right: 1%;
+}
+.first-row > div > h5 {
+    color: #172B4D;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
 }
 .create-announcement {
-    background-color: #FFF6D6;
-    padding: 20px;
-    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.14);
+    background-color: #FFF6D6 !important;
     margin-right: 1%;
-    width: 80%;
 }
 .create-announcement > p > span {
     margin-right: 10px;
@@ -31,6 +39,9 @@
     resize: none;
     width: 100%;
     border: 1px solid #D8D8D8;
+    font-size: 12px;
+    color: #707070;
+    padding: 10px;
 }
 .btn-publish {
     background-color: #32B6A6;
@@ -45,10 +56,7 @@
     color: #FFF;
 }
 .gender-type {
-    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.14);
     background-color: #FAFAFA;
-    padding: 20px;
-    width: 19%;
 }
 .gender-type > p {
     font-size: 13px;
@@ -63,6 +71,7 @@
 }
 .gender-type-container > div > h6 {
     margin: 10px 0;
+    font-weight: 500;
 }
 .gender-type-container > div > p {
     font-size: 14px;
@@ -73,4 +82,16 @@
 }
 .male > h6 {
     color: #0670B4;
+}
+.remove-oval {
+    position: absolute;
+    top: -15px;
+    right: 0;
+    cursor: pointer;
+}
+.edit-oval {
+    position: absolute;
+    bottom: -15px;
+    right: 0;
+    cursor: pointer;
 }
