@@ -1,0 +1,76 @@
+.icon-oval > p {
+    line-height: 20px;
+    margin-top: 10px;
+}
+.icon-oval.active > p {
+    color: #0670B4;
+}
+.flex-box > div {
+     width: 400px;
+}
+.flex-box > div > h4 {
+    color: #4A6480;
+}
+.first-row {
+    display: flex;
+}
+.first-row > div {
+    position: relative;
+}
+.create-announcement {
+    background-color: #FFF6D6;
+    padding: 20px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.14);
+    margin-right: 1%;
+    width: 80%;
+}
+.create-announcement > p > span {
+    margin-right: 10px;
+}
+.form-textarea {
+    resize: none;
+    width: 100%;
+    border: 1px solid #D8D8D8;
+}
+.btn-publish {
+    background-color: #32B6A6;
+    border-radius: 0;
+    font-size: 11px;
+    color: #FFF;
+}
+.btn-previous {
+    background-color: #0670B4;
+    border-radius: 0;
+    font-size: 11px;
+    color: #FFF;
+}
+.gender-type {
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.14);
+    background-color: #FAFAFA;
+    padding: 20px;
+    width: 19%;
+}
+.gender-type > p {
+    font-size: 13px;
+    text-align: center;
+}
+.gender-type-container {
+    display: flex;
+}
+.gender-type-container > div {
+   text-align: center;
+   width: 50%;
+}
+.gender-type-container > div > h6 {
+    margin: 10px 0;
+}
+.gender-type-container > div > p {
+    font-size: 14px;
+}
+.female > h6 {
+    color: #B40606;
+
+}
+.male > h6 {
+    color: #0670B4;
+}
