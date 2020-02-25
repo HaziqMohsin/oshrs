@@ -203,3 +203,40 @@
     margin-top: -50px;
     box-shadow: none;
 }
+.modal-payslip > .modal-dialog {
+    margin: 9.75rem auto;
+    max-width: 308px;
+}
+.modal-payslip > .modal-dialog > .modal-content {
+    border-radius: 0;
+}
+.modal-payslip > .modal-dialog > .modal-content > .modal-body {
+    text-align: center;
+}
+.modal-payslip > .modal-dialog > .modal-content > .modal-body h4 {
+   font-style: normal;
+   font-weight: bold;
+   font-size: 24px;
+   color: #0D0D0D;
+   margin-bottom: 20px;
+}
+.modal-payslip > .modal-dialog > .modal-content > .modal-body h5 {
+    color: #707070;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 500;
+    margin: 0;
+}
+.modal-payslip > .modal-dialog > .modal-content > .modal-body p {
+    color: #2577AC;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 500;
+}
+.btn-cont {
+    background-color: #2577AC;
+    border-radius: 0;
+    color: #FFF;
+    font-weight: normal;
+    font-size: 16px;
+}
