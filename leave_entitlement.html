@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/plugins/mdb-chart/css/mdb.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="css/overtime-report.css" type="text/css">
-
+    <link rel="stylesheet" href="css/overtime-summary.css" type="text/css">
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
 
@@ -32,7 +32,7 @@
     <!-- font awsome icons -->
 </head>
 
-<body class="background-cover profile-bg">
+<body class="background-cover leave-approver-bg">
     <!--********************************* NAVBAR *********************************-->
     <nav class="navbar navbar-expand navbar-dark flex-column flex-md-row top-navbar-fixed">
         <a class="navbar-brand logo-corazon" href="#"><img src="svg/logo.svg" title="Corazon 2.0"></a>
@@ -153,43 +153,50 @@
                         <div class="text-center my-3">
                             <div class="carousel-inner" role="listbox">
                                 <div class="row head-title">
-                                    <h3>Overtime Reports</h3>
+                                    <h3>Leave Entitlement</h3>
                                     <div class="container overtime-container">
-                                        <div class="switch-comp">
-                                            <p><span class="overSummary active-comp">Overtime Summary</span> | <span class="overDetails">Overtime Details</span></p>
-                                        </div>
-
-                                        <div class="overtime-summary overSummaryComp">
-                                            <h4>Overtime Summary</h4>
-                                            <div class="">
-                                                <div class="select-range-container">
-                                                    <input type="text" class="form-control form-date" id="datePickerFrom" placeholder="Start Date">
-                                                    <small>to</small>
-                                                    <input type="text" class="form-control form-date" id="datePickerTo" placeholder="End Date">
-                                                    <input type="text" class="form-control form-status"  placeholder="Status">
-                                                </div>
-                                                <div class="button-position">
-                                                    <button type="button" class="btn btn-search">Search</button>
-                                                    <button type="button" class="btn btn-back">Back</button>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="overtime-summary overDetailComp" style="display: none;">
-                                            <h4>Overtime Detail</h4>
-                                            <div class="">
-                                                <div class="select-range-container">
-                                                    <input type="text" class="form-control form-date" id="datePickerFrom" placeholder="Start Date">
-                                                    <small>to</small>
-                                                    <input type="text" class="form-control form-date" id="datePickerTo" placeholder="End Date">
-                                                    <input type="text" class="form-control form-status"  placeholder="Status">
-                                                </div>
-                                                <div class="button-position">
-                                                    <button type="button" class="btn btn-search">Search</button>
-                                                    <button type="button" class="btn btn-back">Back</button>
-                                                </div>
-                                            </div>
-                                        </div>
+                                       <div class="button-event">
+                                            <button type="button" class="btn btn-copy" data-toggle="tooltip" data-placement="top" title="Copy"><img src="/svg/copy.svg"></button>
+                                            <button type="button" class="btn btn-csv" data-toggle="tooltip" data-placement="top" title="CSV"><img src="/svg/file-csv.svg"></button>
+                                            <button type="button" class="btn btn-excel" data-toggle="tooltip" data-placement="top" title="Excel"><img src="/svg/file-excel.svg"></button>
+                                            <button type="button" class="btn btn-pdf" data-toggle="tooltip" data-placement="top" title="PDF"><img src="/svg/file-pdf.svg"></button>
+                                            <button type="button" class="btn btn-print" data-toggle="tooltip" data-placement="top" title="Print"><img src="/svg/print.svg"></button>
+                                       </div>
+                                       <div class="table-overtime">
+                                            <table id="table_id" class="table-custom">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Leave Application</th>
+                                                        <th>Leave Type</th>
+                                                        <th>Leave Start Date</th>
+                                                        <th>Leave End Date</th>
+                                                        <th>Leave Duration</th>
+                                                        <th>Status</th>
+                                                        <th>Comments</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1211</td>
+                                                        <td>Replacement Leave</td>
+                                                        <td>20-Feb-2020</td>
+                                                        <td>Full Day</td>
+                                                        <td>1</td>
+                                                        <td>Level-1 Approva lPending</td>
+                                                        <td>Available to call</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1211</td>
+                                                        <td>Replacement Leave</td>
+                                                        <td>20-Feb-2020</td>
+                                                        <td>Full Day</td>
+                                                        <td>1</td>
+                                                        <td>Level-1 Approva lPending</td>
+                                                        <td>Available to call</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                       </div>
                                     </div>
                                 </div>
                             </div>
@@ -387,6 +394,7 @@ crossorigin="anonymous"></script>
 integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
 crossorigin="anonymous"></script>
 <script src="/plugins/mdb-chart/js/mdb.min.js"></script>
+<script src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
 
 <!-- SCRIPT -->
 
@@ -440,8 +448,6 @@ crossorigin="anonymous"></script>
     $(document.body).on('click', '.overSummary', function () {
         $('.overDetails').removeClass('active-comp');
         $(this).addClass('active-comp'); 
-        $('.overSummaryComp').show();
-        $('.overDetailComp').hide();
     });
 </script>
 
@@ -449,8 +455,6 @@ crossorigin="anonymous"></script>
     $(document.body).on('click', '.overDetails', function () {
         $('.overSummary').removeClass('active-comp');
         $(this).addClass('active-comp');
-        $('.overSummaryComp').hide();
-        $('.overDetailComp').show();
     });
 </script>
 
@@ -458,13 +462,16 @@ crossorigin="anonymous"></script>
     $(function () {
          $('#datePickerFrom').datepicker();
          $('#datePickerTo').datepicker();
-         // $("#datePickerFrom").on("dp.change", function (e) {
-         //     $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
-         // });
-         // $("#datePickerTo").on("dp.change", function (e) {
-         //     $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
-         // });
      });
+ </script>
+
+ <script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+    $(document).ready( function () {
+        $('#table_id').DataTable();
+    });
  </script>
 
 </body>

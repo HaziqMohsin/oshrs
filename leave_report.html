@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/plugins/mdb-chart/css/mdb.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="css/overtime-report.css" type="text/css">
+    <link rel="stylesheet" href="css/leave-report.css" type="text/css">
 
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
@@ -153,20 +153,17 @@
                         <div class="text-center my-3">
                             <div class="carousel-inner" role="listbox">
                                 <div class="row head-title">
-                                    <h3>Overtime Reports</h3>
+                                    <h3>Leave Reports</h3>
                                     <div class="container overtime-container">
                                         <div class="switch-comp">
-                                            <p><span class="overSummary active-comp">Overtime Summary</span> | <span class="overDetails">Overtime Details</span></p>
+                                            <p><span class="leaveEntitlement active-comp">Leave Entitlement</span> | <span class="leaveSubmitted"">Leave Submitted Request</span></p>
                                         </div>
 
-                                        <div class="overtime-summary overSummaryComp">
-                                            <h4>Overtime Summary</h4>
+                                        <div class="overtime-summary leaveEntitlementComp">
+                                            <h4>leave Entitlement</h4>
                                             <div class="">
                                                 <div class="select-range-container">
                                                     <input type="text" class="form-control form-date" id="datePickerFrom" placeholder="Start Date">
-                                                    <small>to</small>
-                                                    <input type="text" class="form-control form-date" id="datePickerTo" placeholder="End Date">
-                                                    <input type="text" class="form-control form-status"  placeholder="Status">
                                                 </div>
                                                 <div class="button-position">
                                                     <button type="button" class="btn btn-search">Search</button>
@@ -175,8 +172,8 @@
                                             </div>
                                         </div>
 
-                                        <div class="overtime-summary overDetailComp" style="display: none;">
-                                            <h4>Overtime Detail</h4>
+                                        <div class="overtime-summary leaveSubmittedComp" style="display: none;">
+                                            <h4>Leave Submitted Request</h4>
                                             <div class="">
                                                 <div class="select-range-container">
                                                     <input type="text" class="form-control form-date" id="datePickerFrom" placeholder="Start Date">
@@ -437,20 +434,20 @@ crossorigin="anonymous"></script>
 <!-- Forgot password hide/show -->
 
 <script>
-    $(document.body).on('click', '.overSummary', function () {
-        $('.overDetails').removeClass('active-comp');
+    $(document.body).on('click', '.leaveEntitlement', function () {
+        $('.leaveSubmitted').removeClass('active-comp');
         $(this).addClass('active-comp'); 
-        $('.overSummaryComp').show();
-        $('.overDetailComp').hide();
+        $('.leaveEntitlementComp').show();
+        $('.leaveSubmittedComp').hide();
     });
 </script>
 
 <script>
-    $(document.body).on('click', '.overDetails', function () {
-        $('.overSummary').removeClass('active-comp');
+    $(document.body).on('click', '.leaveSubmitted', function () {
+        $('.leaveEntitlement').removeClass('active-comp');
         $(this).addClass('active-comp');
-        $('.overSummaryComp').hide();
-        $('.overDetailComp').show();
+        $('.leaveEntitlementComp').hide();
+        $('.leaveSubmittedComp').show();
     });
 </script>
 
@@ -458,12 +455,6 @@ crossorigin="anonymous"></script>
     $(function () {
          $('#datePickerFrom').datepicker();
          $('#datePickerTo').datepicker();
-         // $("#datePickerFrom").on("dp.change", function (e) {
-         //     $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
-         // });
-         // $("#datePickerTo").on("dp.change", function (e) {
-         //     $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
-         // });
      });
  </script>
 
