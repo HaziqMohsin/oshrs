@@ -157,29 +157,33 @@
                                         <div class="">
                                             <img src="/svg/daimler.svg"/>
                                         </div>
-                                        <div class="">
+                                        <div class="oval-container">
                                             <span class="icon-oval">
                                                 <a href="ep_work_experience.html"><span class="oval-big oval-profile"><img src="/svg/hr-leave.svg"/></span></a>
                                                 <p>Leave Pending Approval</p>
                                             </span>
+                                            <span class="remove-oval oval-delete deleteComponent"><img src="svg/remove-oval.svg"/></span>
                                         </div>
-                                        <div class="">
+                                        <div class="oval-container">
                                             <span class="icon-oval">
                                                 <a href="ep_education_background.html"><span class="oval-big oval-profile"><img src="/svg/hr-overtime.svg"/></span></a>
                                                 <p>Overtime Pending Approval</p>
                                             </span>
+                                            <span class="remove-oval oval-delete deleteComponent"><img src="svg/remove-oval.svg"/></span>
                                         </div>
-                                        <div class="">
+                                        <div class="oval-container">
                                             <span class="icon-oval">
                                                 <a href="ep_account.html"><span class="oval-big oval-profile"><img src="/svg/hr-timesheet.svg"/></span></a>
                                                 <p>Timesheet Pending Approval</p>
                                             </span>
+                                            <span class="remove-oval oval-delete deleteComponent"><img src="svg/remove-oval.svg"/></span>
                                         </div>
-                                        <div class="">
+                                        <div class="oval-container">
                                             <span class="icon-oval">
                                                 <a href="ep_family_beneficiary.html"><span class="oval-big oval-profile"><img src="/svg/hr-expenses.svg"/></span></a>
                                                 <p>Expense Pending Approval</p>
                                             </span>
+                                            <span class="remove-oval oval-delete deleteComponent"><img src="svg/remove-oval.svg"/></span>
                                         </div>
                                     </div>
                                 </div>
@@ -253,7 +257,31 @@
                     </div>
                 </div>
                 <!-- accordian tab function -->
-                <span class="edit-oval"><img src="svg/edit-oval.svg"/></span>
+                <span class="edit-oval editComp"><img src="svg/edit-oval.svg"/></span>
+                <div class="add-component-ul addCompDiv">
+                    <ul>
+                        <li> 
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Team Performance</label>
+                        </li>
+                        <li> 
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Today Shift</label>
+                        </li>
+                        <li> 
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Timesheet and overtime</label>
+                        </li>
+                        <li> 
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Leave management</label>
+                        </li>
+                        <li> 
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">New Hiring</label>
+                        </li>
+                    </ul>
+                </div>
             </main>
             
             
@@ -429,6 +457,17 @@
     </div>
 </div>
 
+<!-- Modal Add component-->
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p>Some text in the modal.</p>
+            </div>
+        </div>
+    </div>
+  </div>
+
 <!-- SCRIPT -->
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"
 integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -494,11 +533,27 @@ crossorigin="anonymous"></script>
 <!-- Forgot password hide/show -->
 
 <script>
+    $(document.body).on('click', '.editComp', function () { 
+        $('.remove-oval').show();
+        // $(this).remove();
+        $(this).replaceWith('<div><span class="plus-oval addComp"><img src="svg/plus-oval.svg"/></span><span class="edit-oval saveComp"><img src="svg/thick-oval.svg"/></span></div>');
+    });
+
     $(document.body).on('click', '.deleteComponent', function () { 
-
         $(this).parent().remove();
+    });
 
-     });
+    $(document.body).on('click', '.saveComp', function () { 
+        $('.remove-oval').hide();
+        $('.plus-oval').hide();
+        $(this).replaceWith('<span class="edit-oval editComp"><img src="svg/edit-oval.svg"/></span>');
+        $('.addCompDiv').hide();
+    });
+
+    $(document.body).on('click', '.addComp', function () {
+        $('.addCompDiv').show();
+    });
+
 </script>
 
 <script>

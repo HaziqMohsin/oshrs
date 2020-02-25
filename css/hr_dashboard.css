@@ -97,10 +97,48 @@
     top: -15px;
     right: 0;
     cursor: pointer;
+    display: none;
+}
+.oval-delete {
+    top: 0px;
+    right: 33px;
 }
 .edit-oval {
     position: absolute;
     bottom: -15px;
     right: 15px;
     cursor: pointer;
+}
+.oval-container {
+    position: relative;
+}
+.plus-oval {
+    position: absolute;
+    bottom: 40px;
+    right: 22px;
+    cursor: pointer;
+}
+.add-component-ul {
+    position: absolute;
+    bottom: 48px;
+    right: 60px;
+    width: 300px;
+    background-color: #FAFAFA;
+    border: 1px solid #EDEDED;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.14);
+    display: none;
+}
+.add-component-ul > ul {
+    
+}
+
+.add-component-ul > ul > li {
+    list-style-type: none;
+    margin: 10px 0;
+}
+.add-component-ul > ul > li > label {
+    color: #0670B4;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
 }
