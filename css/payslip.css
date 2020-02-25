@@ -196,3 +196,6 @@
 .total {
     height: 50px;
 }
+.carousel-item > div {
+    text-align: center;
+}
