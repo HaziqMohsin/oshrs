@@ -146,55 +146,118 @@
             <main class="col-12 col-md-12 col-xl-12 bd-content" role="main">
                 <!-- accordian tab function -->
                 <div class="row row-tab-function">
-                    <div class="col-lg-11 mx-auto">
+                    <div class="col-lg-11 mx-auto head-title">
+                        <h3>My Payslip</h3>
+                        <div class="container flex-box">
+                            <div class="">
+                                <span class="icon-oval active">
+                                    <a href="javascript:void(0);"><span class="oval-big oval-profile active"><img src="/svg/ep-employee.svg"/></span></a>
+                                    <p>Personal <br> information</p>
+                                </span>
+                            </div>
+                            <div class="">
+                                <span class="icon-oval">
+                                    <a href="ep_employee.html"><span class="oval-big oval-profile"><img src="/svg/ep-employment.svg"/></span></a>
+                                    <p>Employment <br> Information</p>
+                                </span>
+                            </div>
+                            <div class="">
+                                <span class="icon-oval">
+                                    <a href="ep_work_experience.html"><span class="oval-big oval-profile"><img src="/svg/ep-work.svg"/></span></a>
+                                    <p>Work <br> Experience</p>
+                                </span>
+                            </div>
+                            <div class="">
+                                <span class="icon-oval">
+                                    <a href="ep_education_background.html"><span class="oval-big oval-profile"><img src="/svg/ep-education.svg"/></span></a>
+                                    <p>Education <br> background</p>
+                                </span>
+                            </div>
+                            <div class="">
+                                <span class="icon-oval">
+                                    <a href="ep_account.html"><span class="oval-big oval-profile"><img src="/svg/ep-financial.svg"/></span></a>
+                                    <p>Financial <br> Information</p>
+                                </span>
+                            </div>
+                            <div class="">
+                                <span class="icon-oval">
+                                    <a href="ep_family_beneficiary.html"><span class="oval-big oval-profile"><img src="/svg/ep-family.svg"/></span></a>
+                                    <p>Family & <br> eneficiary</p>
+                                </span>
+                            </div>
+                        </div>
                         <div class="special-text ps-special-text">
-                            <h2>My Payslip Summary </h2>
+                            <h2>Tax Calculator </h2>
                             
                             <!-- Hidden Content -->
                             <div class="container">
                                 <div class="row pb-3">
-                                   <div class="container payslip-summary-section">
-                                        <div class="select-month-section">
-                                            <p>Select Month</p>
-                                            <select class="form-control form-control-select" id="exampleFormControlSelect1">
-                                                <option>January</option>
-                                                <option>February</option>
-                                                <option>March</option>
-                                                <option>April</option>
-                                                <option>May</option>
-                                                <option>June</option>
-                                                <option>July</option>
-                                                <option>August</option>
-                                                <option>September</option>
-                                                <option>October</option>
-                                                <option>November</option>
-                                                <option>December</option>
-                                            </select>
-                                            <div class="">
-                                                <p>Total Salary Amount</p>
-                                                <h2>$3000.00</h2>
-                                            </div>
-                                            
+                                   <div class="container">
+                                        <p>Calculate monthly PCB, EPF, SOCSO, EPI Deduction</p>
+                                        <div class="calculator-div">
+                                            <label>Salary (RM</label>
+                                            <input type="text" class="form-control"/>
+                                            <label>Bonus (RM</label>
+                                            <input type="text" class="form-control"/>
+                                        </div>  
+                                        <div class="button-go">
+                                            <button type="button" class="btn btn-go">GO</button>
+                                        </div>                      
+                                   </div>
+                                   <div class="salary-statement">
+                                        <h4>Salary Statement (in RM)</h4>
+                                        <div class="">
+                                            <table class="table-statement">
+                                                <tr>
+                                                    <td>Salary:</td>
+                                                    <td>2000.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Bonus:</td>
+                                                    <td>1000.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Net Salary:</td>
+                                                    <td>2656.66</td>
+                                                </tr>
+                                            </table>
                                         </div>
                                         <div class="">
-                                            <p>Salary Breakdown</p>
-                                            <table class="table-bordered table-salary-breakdown">
-                                                <tr>
-                                                    <td rowspan="2" class="gross-salary">
-                                                        <p>Gross Salary</p>
-                                                        <h4>$2850.00</h4>
-                                                    </td>
-                                                    <td class="sales">
-                                                        <p>Sales Commision</p>
-                                                        <h4>$2850.00</h4>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="income-taxes">
-                                                        <p>Income Taxes</p>
-                                                        <h4>$2850.00</h4>
-                                                    </td>
-                                                </tr>
+                                            <table class="table-statement2">
+                                                <thead>
+                                                    <tr>
+                                                        <th></th>
+                                                        <th>Employer</th>
+                                                        <th>Employee</th>
+                                                        <th>Sub-Total</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>EPF:</td>
+                                                        <td>390.00</td>
+                                                        <td>330.00</td>
+                                                        <td>720.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>SOCSO:</td>
+                                                        <td>390.00</td>
+                                                        <td>330.00</td>
+                                                        <td>720.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>EIS:</td>
+                                                        <td>390.00</td>
+                                                        <td>330.00</td>
+                                                        <td>720.00</td>
+                                                    </tr>
+                                                    <tr class="total">
+                                                        <td>Total:</td>
+                                                        <td>390.00</td>
+                                                        <td>330.00</td>
+                                                        <td>720.00</td>
+                                                    </tr>
+                                                </tbody>
                                             </table>
                                         </div>
                                    </div>
@@ -206,13 +269,6 @@
                     <button class="expand-button">
                        More <br><i class="fa fa-angle-double-down" aria-hidden="true"></i>
                     </button> 
-                </div>
-
-                <div class="row">
-                    <div class="container container-efilling">
-                        <img src="/svg/efiling.svg" alt="EFILING"/>
-                        <a href="https://www.incometaxindia.gov.in/Pages/tools/tds-calculator.aspx" target="_blank">Click here to TDS Calculator <i class="fa fa-angle-double-right"></i></a>
-                    </div>
                 </div>
 
                 <div class="row">

@@ -1,8 +1,24 @@
 *{
     font-family: 'Poppins', sans-serif;
 }
+.icon-oval > p {
+    line-height: 20px;
+    margin-top: 10px;
+}
+.icon-oval.active > p {
+    color: #0670B4;
+}
+.flex-box > div {
+     width: 400px;
+}
+.head-title > h3 {
+    text-align: center;
+    color: #0E0E0E;
+    font-size: 28px;
+    font-weight: 800;
+}
 .ps-special-text{
-    margin-top: 157px;
+    /* margin-top: 157px; */
 }
 .ps-special-text > h2{
     font-size: 28px;
@@ -28,70 +44,8 @@
     width: 100%;
     top: 250px; */
 }
-.payslip-summary-section{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    text-align: left;
-    margin-bottom: 30px;
-}
-.payslip-summary-section > div{
-    width: 100%;
-}
-.payslip-summary-section > div > p{
-    font-size: 16px;
-    font-weight: normal;
-    color: #2C2C2C;
-}
-.select-month-section > p{
-    display: inline-block;
-}
-.select-month-section > .form-control-select{
-    display: inline-block;
-    width: 40%;
-    border-radius: 0;
-}
-.select-month-section > div{
-    padding: 30px;
-}
-.select-month-section > div > p{
-    font-size: 16px;
-    font-weight: normal;
-    color: #2C2C2C;
-    margin-bottom: 0;
-}
-.select-month-section > div > h2{
-    font-size: 48px;
-    font-weight: bold;
-    color: #0670B4;
-}
-.gross-salary > p, .sales > p, .income-taxes > p{
-    color: #2C2C2C;
-    font-size: 16px;
-    font-weight: normal;
-    margin: 0;
-}
-.gross-salary > h4{
-    color: #0670B4;
-    font-size: 36px;
-    font-weight: 600;
-}
-.sales > h4{
-    color: #32B6A6;
-    font-size: 36px;
-    font-weight: 600;
-}
-.income-taxes > h4{
-    color: #E8AA35;
-    font-size: 36px;
-    font-weight: 600;
-}
-.table-salary-breakdown > tbody > tr > td{
-    background-color: #FFF;
-    padding: 10px 20px;
-}
 .btn-view{
-    background-image: url(../svg/download.svg);
+    background-image: url(../svg/eye.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-color: #2577AC;
@@ -169,4 +123,76 @@
 }
 .left-sidebar-fixed h6 {
     top: 50px;
+}
+.calculator-div {
+    max-width: 500px;
+    margin: auto;
+}
+.calculator-div > label {
+    display: inline-block;
+    width: 30%;
+    margin-bottom: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+}
+.calculator-div > input {
+    display: inline-block;
+    width: 60%;
+    border-radius: 0;
+}
+.btn-go {
+    background-color: #2577AC;
+    color: #FFF;
+    border-radius: 0;
+    width: 115px;
+    margin-top: 10px;
+}
+.salary-statement {
+    background-color: #FFF;
+    border-radius: 0;
+    width: 468px;
+    margin: 10px auto;
+    padding: 10px;
+}
+.salary-statement > h4 {
+    font-weight: bold;
+    font-size: 18px;
+}
+.table-statement {
+    width: 35%;
+    margin: 10px auto; 
+}
+.table-statement > tbody > tr > td {
+    font-weight: normal;
+    font-size: 14px;
+    color: #000;
+    text-align: left;
+}
+.table-statement > tbody > tr > td:last-child {
+    color: #2577AC;
+    font-weight: bold;
+}
+
+.table-statement2 {
+    width: 100%;
+    margin: 10px 0;
+}
+.table-statement2 > thead > tr > th {
+    font-weight: 500;
+    font-size: 14px;
+    color: #000;
+    text-align: right;
+}
+.table-statement2 > tbody > tr > td {
+    font-weight: normal;
+    font-size: 14px;
+    color: #000;
+    text-align: right;
+}
+.table-statement2 > tbody > tr > td:first-child {
+    text-align: left;
+}
+.total {
+    height: 50px;
 }
