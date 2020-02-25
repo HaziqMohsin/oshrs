@@ -1453,3 +1453,33 @@ max-width: 71%;
   color: #2C2C2C;
   font-size: 16px;
 }
+.btn-copy {
+  background-color: #0670B4;
+  border-radius: 0;
+  width: 34px;
+  padding: 10px;
+}
+.btn-csv {
+  background-color: #047212;
+  border-radius: 0;
+  width: 34px;
+  padding: 10px;
+}
+.btn-excel {
+  background-color: #1E6F42;
+  border-radius: 0;
+  width: 34px;
+  padding: 10px;
+}
+.btn-pdf {
+  background-color: #FF2116;
+  border-radius: 0;
+  width: 34px;
+  padding: 10px;
+}
+.btn-print {
+  background-color: #06ADB4;
+  border-radius: 0;
+  width: 34px;
+  padding: 10px;
+}
