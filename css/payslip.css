@@ -152,7 +152,7 @@
     background-color: #FFF;
     border-radius: 0;
     width: 468px;
-    margin: 10px auto;
+    margin: 10px auto 30px auto;
     padding: 10px;
 }
 .salary-statement > h4 {
@@ -198,4 +198,8 @@
 }
 .carousel-item > div {
     text-align: center;
+}
+.expand-button {
+    margin-top: -50px;
+    box-shadow: none;
 }
