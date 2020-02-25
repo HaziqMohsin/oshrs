@@ -148,33 +148,37 @@
             
             <main class="col-12 col-md-12 col-xl-12 bd-content" role="main">
                 <!-- carousel slider -->
-                <div class="row">
+                <div class="row row-height">
                     <div class="col-lg-11 mx-auto">
                         <div class="text-center my-3">
                             <div class="carousel-inner" role="listbox">
                                 <div class="row">
-                                    <div class="container flex-box">
+                                    <div class="container flex-box marg-top-50">
                                         <div class="">
                                             <img src="/svg/daimler.svg"/>
                                         </div>
                                         <div class="">
                                             <span class="icon-oval">
-                                                <a href="ep_work_experience.html"><span class="oval-big oval-profile"><img src="/svg/ep-work.svg"/></span></a>
+                                                <a href="ep_work_experience.html"><span class="oval-big oval-profile"><img src="/svg/hr-leave.svg"/></span></a>
+                                                <p>Leave Pending Approval</p>
                                             </span>
                                         </div>
                                         <div class="">
                                             <span class="icon-oval">
-                                                <a href="ep_education_background.html"><span class="oval-big oval-profile"><img src="/svg/ep-education.svg"/></span></a>
+                                                <a href="ep_education_background.html"><span class="oval-big oval-profile"><img src="/svg/hr-overtime.svg"/></span></a>
+                                                <p>Overtime Pending Approval</p>
                                             </span>
                                         </div>
                                         <div class="">
                                             <span class="icon-oval">
-                                                <a href="ep_account.html"><span class="oval-big oval-profile"><img src="/svg/ep-financial.svg"/></span></a>
+                                                <a href="ep_account.html"><span class="oval-big oval-profile"><img src="/svg/hr-timesheet.svg"/></span></a>
+                                                <p>Timesheet Pending Approval</p>
                                             </span>
                                         </div>
                                         <div class="">
                                             <span class="icon-oval">
-                                                <a href="ep_family_beneficiary.html"><span class="oval-big oval-profile"><img src="/svg/ep-family.svg"/></span></a>
+                                                <a href="ep_family_beneficiary.html"><span class="oval-big oval-profile"><img src="/svg/hr-expenses.svg"/></span></a>
+                                                <p>Expense Pending Approval</p>
                                             </span>
                                         </div>
                                     </div>
@@ -190,16 +194,16 @@
                 <div class="row">
                     <div class="col-lg-11 mx-auto">
                         <div class="row first-row">
-                            <div class="create-announcement">
+                            <div class="create-announcement component-div">
                                 <p><span><img src="/svg/bullhorn.svg"/></span>Create Announcement</p>
                                 <textarea class="form-textarea" rows="3" cols="100"></textarea>
                                 <div class="">
                                     <button type="button" class="btn btn-publish">Publish</button>
                                     <button type="button" class="btn btn-previous">Previous Announcement</button>
                                 </div>
-                                <span class="remove-oval"><img src="svg/remove-oval.svg"/></span>
+                                <span class="remove-oval deleteComponent"><img src="svg/remove-oval.svg"/></span>
                             </div>
-                            <div class="gender-type">
+                            <div class="gender-type component-div">
                                 <h5>Employee by Gender</h5>
                                 <div class="gender-type-container">
                                     <div class="female">
@@ -213,43 +217,43 @@
                                         <p>Men</p>
                                     </div>
                                 </div>
-                                <span class="remove-oval"><img src="svg/remove-oval.svg"/></span>
+                                <span class="remove-oval deleteComponent"><img src="svg/remove-oval.svg"/></span>
                             </div>
-                            <div class="">
+                            <div class="component-div">
                                 <h5>Total Active Headcount</h5>
                                 <!-- Start your project here-->  
                                 <canvas id="myChart" style="max-width: 500px;"></canvas>
                                 <!-- End your project here-->
-                                <span class="remove-oval"><img src="svg/remove-oval.svg"/></span>
+                                <span class="remove-oval deleteComponent"><img src="svg/remove-oval.svg"/></span>
                             </div>
-                            <div class="">
+                            <div class="component-div">
                                 <h5>Total Active Headcount</h5>
                                 <!-- Start your project here-->  
                                 <canvas id="myChart" style="max-width: 500px;"></canvas>
                                 <!-- End your project here-->
-                                <span class="remove-oval"><img src="svg/remove-oval.svg"/></span>
+                                <span class="remove-oval deleteComponent"><img src="svg/remove-oval.svg"/></span>
                             </div>
-                            <div class="">
+                            <div class="component-div">
                                 <h5>Total Active Headcount</h5>
                                 <!-- Start your project here-->  
                                 <canvas id="myChart" style="max-width: 500px;"></canvas>
                                 <!-- End your project here-->
-                                <span class="remove-oval"><img src="svg/remove-oval.svg"/></span>
+                                <span class="remove-oval deleteComponent"><img src="svg/remove-oval.svg"/></span>
                             </div>
-                            <div class="">
+                            <div class="component-div">
                                 <h5>Total Active Headcount</h5>
                                 <!-- Start your project here-->  
                                 <canvas id="myChart" style="max-width: 500px;"></canvas>
                                 <!-- End your project here-->
-                                <span class="remove-oval"><img src="svg/remove-oval.svg"/></span>
+                                <span class="remove-oval deleteComponent"><img src="svg/remove-oval.svg"/></span>
                             </div>
                             <!-- EDIT BUTTON -->
-                            <span class="edit-oval"><img src="svg/edit-oval.svg"/></span>
+                           
                         </div>
                     </div>
                 </div>
                 <!-- accordian tab function -->
-                
+                <span class="edit-oval"><img src="svg/edit-oval.svg"/></span>
             </main>
             
             
@@ -488,6 +492,14 @@ crossorigin="anonymous"></script>
     });  
 </script>
 <!-- Forgot password hide/show -->
+
+<script>
+    $(document.body).on('click', '.deleteComponent', function () { 
+
+        $(this).parent().remove();
+
+     });
+</script>
 
 <script>
     var ctx = document.getElementById("myChart").getContext('2d');

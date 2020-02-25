@@ -2,11 +2,20 @@
     line-height: 20px;
     margin-top: 10px;
 }
+.profile-bg {
+    height: 400px;
+}
+.row-height {
+    height: 350px;
+}
+.marg-top-50 {
+    margin-top: 50px;
+}
 .icon-oval.active > p {
     color: #0670B4;
 }
 .flex-box > div {
-     width: 400px;
+    /* width: 400px; */
 }
 .flex-box > div > h4 {
     color: #4A6480;
@@ -92,6 +101,6 @@
 .edit-oval {
     position: absolute;
     bottom: -15px;
-    right: 0;
+    right: 15px;
     cursor: pointer;
 }
