@@ -48,14 +48,6 @@
 .expense-special-text > h4 > span{
     margin-left: 20px;
 }
-.expense-form-text{
-    /* display: flex; */
-    align-items: center;
-}
-.expense-form-text > label{
-    font-size: 16px;
-    font-weight: normal;
-}
 
 .btn-view{
     background-color: #2577AC;
@@ -103,7 +95,7 @@
 }
 .form-type{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
 }
 .container-ta{
     margin-top: 20px;
@@ -172,9 +164,11 @@
 }
 
 .btn-add-expense{
-    background-color: #00BFA2;
+    background-color: #00A2BF;
     border-radius: 0;
     color: #fff;
+    margin: auto;
+    display: block;
 }
 
 .btn-delete-table{
@@ -326,3 +320,52 @@ tbody{
 .fa-paperclip{
     transform: rotate(-45deg);
 }
+
+.currency-field{
+    width: 60%;
+    float: right;
+}
+
+.expense-form-left{
+    display: flex;
+}
+
+.expense-form-text > span{
+    font-size: 16px;
+    font-weight:500;
+    width: 40%;
+    float: left;
+    text-align: end;
+    margin-top: 15px;
+    display: flex;
+}
+
+.expense-form-left > span{
+    font-size: 16px;
+    font-weight:500;
+    width: 40%;
+    float: right;
+    text-align: left;
+}
+
+.expense-form-left > input{
+    width: 40%;
+    position: absolute;
+    left: 180px;
+    top: 60px;
+}
+
+.user-detail{
+    font-size: 18px;
+    position: relative;
+    top: 0;
+    font-weight: 500;
+    color: #0670B4;
+}
+
+.user-id{
+    font-size: 16px;
+    font-weight: 500;
+
+}
+

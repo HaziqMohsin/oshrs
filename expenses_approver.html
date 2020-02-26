@@ -138,10 +138,9 @@
 								<!-- <div class="scrollbar" id="style-15">
 									<div class="force-overflow"></div>
 								</div> -->
-								<div class="background-overlay col-lg-10 mx-auto scrollbar" id="style-15">
-									<div class="col-lg-10 mx-auto force-overflow">
-										<div class="row mt-3"> 
-											
+								<div class="background-overlay col-lg-10 mx-auto pending-size id="style-15">
+									<div class="col-lg-10 mx-auto force-overflow ">
+										<div class="row mt-3 pending-header"> 
 											<div class="col-md-4 left-title">
 												<h3>Expense Pending Approval</h3>
 											</div>
@@ -160,22 +159,11 @@
 											</div>
 										</div>
 										
-										
-										<div class="row">
-											<div class="col-md-12">
-												<div class="checkbox">
-													<label class="select-all">
-														<input type="checkbox" class="check" id="checkAll"> Select All
-													</label>
-												</div>
-											</div>
-										</div>
-										
 										<!-- BUTTONS APPROVE & REJECT -->
-										<div class="button-fixed">
+										<!-- <div class="button-fixed">
 											<button type="button" class="btn btn-common btn-approve"><img src="svg/approve-btn.svg"> Approve</button>
 											<button type="button" class="btn btn-common btn-reject ml-3"><img src="svg/reject-btn.svg"> Reject</button>
-										</div>
+										</div> -->
 										<!-- BUTTONS APPROVE & REJECT -->
 										
 										
@@ -187,12 +175,8 @@
 												
 												<!-- CHECKBOX & ICON -->
 												<div class="col-md-3 tab-col-1">
-													<span class="checkbox">
-														<label>
-															<input type="checkbox" class="check">
-														</label>
-													</span>
-													<span class="cost-circle"><h4>$1,340</h4></span>
+													<span class="cost-circle"></span>
+													<p>$1340</p>
 												</div>
 												<!-- CHECKBOX & ICON -->
 												
@@ -206,7 +190,7 @@
 												
 												<!-- edit & attachment -->
 												<div class="col-md-2 tab-col-3">
-													<span class="text-right mr-3"><img id="popover-textarea" src="svg/remark.svg"></span>
+													<span class="text-right mr-3 viewExpense"><img src="/img/expense/alleye.png"></span>
 													<span class="text-right mr-3"><img id="popover-textarea" src="svg/remark.svg"></span>
 
 													<div id="myForm" class="hide" style="display: none;">
@@ -232,12 +216,8 @@
 												
 												<!-- CHECKBOX & ICON -->
 												<div class="col-md-3 tab-col-1">
-													<span class="checkbox">
-														<label>
-															<input type="checkbox" class="check">
-														</label>
-													</span>
-													<span class="cost-circle"><h4>$,1340</h4></span>
+													<span class="cost-circle"></span>
+													<p>$1340</p>
 												</div>
 												<!-- CHECKBOX & ICON -->
 												
@@ -251,7 +231,7 @@
 												
 												<!-- edit & attachment -->
 												<div class="col-md-2 tab-col-3">
-													<span class="text-right mr-3"><img id="popover-textarea" src="svg/remark.svg"></span>
+													<span class="text-right mr-3 viewExpense"><img src="/img/expense/alleye.png"></span>
 													<span class="text-right mr-3"><img id="popover-textarea" src="svg/remark.svg"></span>
 
 												</div>
@@ -265,12 +245,8 @@
 												
 												<!-- CHECKBOX & ICON -->
 												<div class="col-md-3 tab-col-1">
-													<span class="checkbox">
-														<label>
-															<input type="checkbox" class="check">
-														</label>
-													</span>
-													<span class="cost-circle"><h4>$,1340</h4></span>
+													<span class="cost-circle"></span>
+													<p>$1340</p>
 												</div>
 												<!-- CHECKBOX & ICON -->
 												
@@ -284,7 +260,7 @@
 												
 												<!-- edit & attachment -->
 												<div class="col-md-2 tab-col-3">
-													<span class="text-right mr-3"><img id="popover-textarea" src="svg/remark.svg"></span>
+													<span class="text-right mr-3 viewExpense"><img src="/img/expense/alleye.png"></span>
 													<span class="text-right mr-3"><img id="popover-textarea" src="svg/remark.svg"></span>
 
 												</div>
@@ -298,12 +274,8 @@
 												
 												<!-- CHECKBOX & ICON -->
 												<div class="col-md-3 tab-col-1">
-													<span class="checkbox">
-														<label>
-															<input type="checkbox" class="check">
-														</label>
-													</span>
-													<span class="cost-circle"><h4>$,1340</h4></span>
+													<span class="cost-circle"></span>
+													<p>$1340</p>
 												</div>
 												<!-- CHECKBOX & ICON -->
 												
@@ -317,7 +289,7 @@
 												
 												<!-- edit & attachment -->
 												<div class="col-md-2 tab-col-3">
-													<span class="text-right mr-3"><img id="popover-textarea" src="svg/remark.svg"></span>
+													<span class="text-right mr-3 viewExpense"><img src="/img/expense/alleye.png"></span>
 													<span class="text-right mr-3"><img id="popover-textarea" src="svg/remark.svg"></span>
 
 												</div>
@@ -514,6 +486,10 @@
 						$('.check').click(function(){
 							$(this).parents('.card.tab-card').toggleClass('select');
 						})
+
+						$(document).on('click','.viewExpense', function(){ 
+							window.location.href = '/expenses_view.html'
+						});
 						
 					</script>
 					

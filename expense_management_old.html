@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="css/expense_view.css" type="text/css">
     <link rel="stylesheet" href="css/expense.css" type="text/css">
+    <link rel="stylesheet" href="css/icomoon.css">
     <!-- CSS -->
     
     <!-- font awsome icons -->
@@ -151,49 +151,30 @@
                         <div class="text-center my-3">
                             <div class="carousel-inner" role="listbox">
                                 <div class="row">
-                                    <h4 style="margin: auto; margin-bottom: 20px;">My Expense Status as of <span id="dateTimeToday" class="date-time-today"><input type="hidden" id="inputDateTime" /></span></h4>
                                     <div class="container flex-box">
-                                        <div class="main-oval">
+                                        <div class="">
                                             <span class="icon-oval">
-                                                <a href="ep_personal.html"><span class="oval-big oval-profile"><img src="/svg/Draft.svg"/></span></a>
-                                                <p class="btnTableDraft">Draft</p>
+                                                <span class="oval-big expense_value"><h4>$1,340</h4></span> 
+                                                <p>Draft</p>
                                             </span>
-                                            <span class="oval-small">1</span>
                                         </div>
-                                        <div class="main-oval">
+                                        <div class="">
                                             <span class="icon-oval">
-                                                <a href="ep_employee.html"><span class="oval-big oval-profile"><img src="/svg/pendingApproval.svg"/></span></a>
-                                                <p class="btnTablePendingApproval">Pending Approval</p>
+                                                <span class="oval-big expense_value"><h4>$1,340</h4></span>
+                                                <p>Pending For Approval</p>
                                             </span>
-                                            <span class="oval-small">1</span>
                                         </div>
-                                        <div class="main-oval">
+                                        <div class="">
                                             <span class="icon-oval">
-                                                <a href="ep_work_experience.html"><span class="oval-big oval-profile"><img src="/svg/Approved.svg"/></span></a>
-                                                <p class="btnTableApproved">Approved</p>
+                                                <span class="oval-big expense_value"><h4>$1,340</h4></span>
+                                                <p>Approved</p>
                                             </span>
-                                            <span class="oval-small">1</span>
                                         </div>
-                                        <div class="main-oval">
+                                        <div class="">
                                             <span class="icon-oval">
-                                                <a href="ep_education_background.html"><span class="oval-big oval-profile"><img src="/svg/Reimbursed.svg"/></span></a>
-                                                <p class="btnTableReimbursed">Reimbursed</p>
+                                                <span class="oval-big expense_value"><h4>$1,340</h4></span>
+                                                <p>Reimburse</p>
                                             </span>
-                                            <span class="oval-small">1</span>
-                                        </div>
-                                        <div class="main-oval">
-                                            <span class="icon-oval active">
-                                                <a href="javascript:void(0);"><span class="oval-big oval-profile"><img src="/svg/expenseReport.svg"/></span></a>
-                                                <p>Expense Report</p>
-                                            </span>
-                                            <span class="oval-small">1</span>
-                                        </div>
-                                        <div class="main-oval">
-                                            <span class="icon-oval">
-                                                <a href="ep_family_beneficiary.html"><span class="oval-big oval-profile"><img src="/svg/approvalPanel.svg"/></span></a>
-                                                <p>Approval Panel</p>
-                                            </span>
-                                            <span class="oval-small">1</span>
                                         </div>
                                     </div>
                                 </div>
@@ -208,215 +189,38 @@
                 <div class="row">
                     <div class="col-lg-11 mx-auto">
                         <div class="special-text expense-special-text">
-                            <h4>Create New Claim</h4>
+                            <h4>Request Expense</h4>
                             <!-- ta type -->
                             <div class="container container-ta">
-                                <div class="row form-type justify-content-md-center">
+                                <div class="row form-type">
                                     <div class="col-md-3">
                                         <div class="form-group expense-form-text">
-                                            <label>Claim Title</label>
+                                            <label for="exampleFormControlSelect1">Expense Title</label>
                                             <input type="text" class="form-control form-text" id="">
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-3">
                                         <div class="form-group expense-form-text">
                                             <label for="exampleFormControlSelect1">Department Code</label>
                                             <input type="text" class="form-control form-text" id="">
                                         </div>
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="col-md-4">
                                         <div class="form-group expense-form-text">
                                             <label for="exampleFormControlSelect1">Total Claim Amount</label>
                                             <input type="text" class="form-control form-text" style="width: 50%;" id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="$00:0000">
                                         </div>
                                     </div>
                                     <div class="col-md-2">
-                                        <span class="expense-submit">Expense Submitted!</span>
-                                        <button type="button" class="btn btn-save">SAVE</button>
-                                        <button type="button" class="btn btn-submit">SUBMIT</button>
+                                        <button type="button" class="btn btn-save"><img src="/img/expense/save.png"/>  SAVE</button>
+                                        <button type="button" class="btn btn-submit"><img src="/img/expense/submit.png"/>SUBMIT</button>
                                     </div>
                                 </div>
                             </div>
                             
                             <!-- <hr class="mt-2 mb-2"> -->
                             
-                            <!-- TABLE DRAFT -->
-                            <div class="row mt-3">
-                                <div class="col-lg-11 mx-auto">
-                                    <div class="row">
-                                        <div class="col-12" style="margin-bottom: 40px;">
-                                            <div class="card">
-                                                <div class="card-body table-responsive p-0">
-                                                    <table class="table table-hover">
-                                                        <thead>
-                                                            <tr>
-                                                                <th>Claim Date</th>
-                                                                <th>Claim No</th>
-                                                                <th>Claim Type</th>
-                                                                <th>Expense Country & Currency</th>
-                                                                <th>Expense Item Amount ($)</th>
-                                                                <th>Exchange Rate</th>
-                                                                <th>Home Currency Amount</th>
-                                                                <th>Distance (KM)</th>
-                                                                <th>Claim</th>
-                                                                <th>Remarks</th>
-                                                                <th>Edit/ Remove</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>
-                                                                    <div class="input-group">
-                                                                        <input type="text" class="form-control receiptDate"  aria-describedby="inputGroupAppendReceipt">
-                                                                        <div class="input-group-append">
-                                                                        <span class="input-group-text append-input" id="inputGroupAppendReceipt"><i class="far fa-calendar-alt" aria-hidden="true"></i></span>
-                                                                        </div>
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <select class="form-control" id="">
-                                                                        <option></option>
-                                                                        <option></option>
-                                                                        <option></option>
-                                                                        <option></option>
-                                                                        </select>
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <select class="form-control" id="">
-                                                                        <option></option>
-                                                                        <option></option>
-                                                                        <option></option>
-                                                                        <option></option>
-                                                                        </select>
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>$ <span class="homeCurrencyAmount">xxx</span></td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="input-group">
-                                                                        <div class="input-group-prepend">
-                                                                            <input type="hidden" type="file" class="uploadImage" />
-                                                                            <span class="input-group-text uploadBtn" id="inputGroupPrependReceipt"><i class="fa fa-paperclip" aria-hidden="true"></i></span>
-                                                                            <span class="" style="padding-left: 5px;"aria-describedby="inputGroupPrependReceipt"></span>
-                                                                        </div>
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td class="btn_action">
-                                                                    <button class="btn btn-save-table table-btn"><img src="/img/expense/save.png"/></button>
-                                                                    <button class="btn btn-delete-table table-btn"><img src="/img/expense/delete.png"/></button>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>
-                                                                    <div class="input-group">
-                                                                        <input type="text" class="form-control receiptDate"  value="12 Jan 2020" aria-describedby="inputGroupAppendReceipt">
-                                                                        <div class="input-group-append">
-                                                                        <span class="input-group-text append-input" id="inputGroupAppendReceipt"><i class="far fa-calendar-alt" aria-hidden="true"></i></span>
-                                                                        </div>
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" class="form-control" value="BH12345">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <select class="form-control" id="">
-                                                                        <option selected>Travel</option>
-                                                                        <option></option>
-                                                                        <option></option>
-                                                                        <option></option>
-                                                                        </select>
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <select class="form-control" id="">
-                                                                        <option selected>INDIA-INR</option>
-                                                                        <option>MALAYSIA-MYR</option>
-                                                                        <option>INDONESIA-IDR</option>
-                                                                        <option></option>
-                                                                        </select>
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" class="form-control" value="50">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" class="form-control" value="17">
-                                                                    </div>
-                                                                </td>
-                                                                <td>$ <span class="homeCurrencyAmount">xxx</span></td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="input-group">
-                                                                        <div class="input-group-prepend">
-                                                                            <input type="hidden" type="file" class="uploadImage" />
-                                                                            <span class="input-group-text uploadBtn" id="inputGroupPrependReceipt"><i class="fa fa-paperclip" aria-hidden="true"></i></span>
-                                                                            <span class="" style="padding-left: 5px;"aria-describedby="inputGroupPrependReceipt">jan.pdf</span>
-                                                                        </div>
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" class="form-control" value="">
-                                                                    </div>
-                                                                </td>
-                                                                <td class="btn_action">
-                                                                    <button class="btn btn-edit-add-table table-btn"><img src="/img/expense/editAccount.png"/></button>
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                                <!-- /.card-body -->
-                                            </div>
-                                            <!-- /.card -->
-                                            <div class="container-ta">
-                                                <div>
-                                                    <button type="button" class="btn btn-add-expense">Add Item</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div> 
-                                </div>
-                            </div>
-                            <!-- END TABLE DRAFT -->
+                            <!-- Hidden Content -->
                             
                             <!-- Hidden Content -->
                             
@@ -425,11 +229,58 @@
                         
                     </div>
                     <button class="expand-button expand-button-expense">
-                        Add Expense <br><i class="fa fa-plus-circle" aria-hidden="true"></i>
+                        Add Expense <i class="fa fa-angle-double-right" aria-hidden="true"></i>
                     </button>
                 </div>
                 <!-- accordian tab function -->
+                
+                
+                <!-- leave status today -->
+                <div class="row">
+                    <div class="col-lg-9 mx-auto text-center leave-status">
+                        <h4>My Expense Status as of <span id="dateTimeToday" class="date-time-today"></span></h4>
+                            <!-- <h4>My T&A as of <span></span> <img class="openCalendar" src="svg/datepik-main.svg"></h4> -->
+                        <div class="row status-icon-tna">
+                            <div class="">
+                                <!-- <img src="svg/leave-pending.svg" title="Leave Pending Approvals"> -->
+                                <i class="icon-draft"></i>
+                                <p>Draft</p>
+                                <a href="javascript:void(0);" class="btn btn-sm animated-button thar-four btnTableDraft">2 Records</a>
+                            </div>
+                            <div class="">
+                                <i class="icon-pending-approval"></i>
+                                <p>Pending Approval</p>
+                                <a href="javascript:void(0);" class="btn btn-sm animated-button thar-four btnTablePendingApproval">2 Records</a>
+                            </div>
+                            <div class="">
+                                <i class="icon-approved"></i>
+                                <p>Approved</p>
+                                <a href="javascript:void(0);" class="btn btn-sm animated-button thar-four btnTableApproved">2 Records</a>
+                            </div>
+                            <div class="">
+                                <img src="/img/expense/reimburse.png">
+                                <p>Reimburse</p>
+                                <a href="javascript:void(0);" class="btn btn-sm animated-button thar-four btnAddApproval">Approval Panel</a>
+                            </div>
+                            <div class="">
+                                <i class="icon-approval-panel"></i>
+                                <p></p>
+                                <a href="javascript:void(0);" class="btn btn-sm animated-button thar-four btnAddApproval">Approval Panel</a>
+                            </div>
+                            
+                            <div class="">
+                                <i class="icon-tna-history"></i>
+                                <p></p>
+                                <a href="javascript:void(0);" class="btn btn-sm animated-button thar-four">T&A History</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- leave status today -->
+                
+                
                 <!-- TABLE GRID AFTER CLICK NO.OF RECORDS*****************Raj************************ -->
+
                     <!-- TABLE DRAFT -->
                     <div class="row mt-3 tableDraft display-none">
                         <div class="col-lg-11 mx-auto">
@@ -474,7 +325,6 @@
                         </div>
                     </div>
                     <!-- END TABLE DRAFT -->
-                    
 
                     <!-- TABLE PENDING APPROVAL-->
                     <div class="row mt-3 tablePendingApproval display-none">
@@ -506,7 +356,7 @@
                                                         <td>NA</td>
                                                         <td><span class="pending-approved"></span>Pending</td>
                                                         <td class="btn_action">
-                                                            <button class="btn btn-view-table table-btn"><i class="fa fa-eye"></i></button>
+                                                            <button class="btn btn-view-table table-btn downloadApproval"><img src="/img/expense/download.png" /></button>
                                                         </td>
                                                     </tr>
                                                 </tbody>
@@ -551,7 +401,7 @@
                                                         <td>NA</td>
                                                         <td><span class="status-approved"></span>Approved</td>
                                                         <td class="btn_action">
-                                                            <button class="btn btn-view-table table-btn"><i class="fa fa-eye"></i></button>
+                                                            <button class="btn btn-view-table table-btn downloadApproval"><img src="/img/expense/download.png" /></button>
                                                         </td>
                                                     </tr>
                                                 </tbody>
@@ -564,51 +414,7 @@
                             </div> 
                         </div>
                     </div>
-
-                    <!-- TABLE tableReimbursed-->
-                    <div class="row mt-3 tableReimbursed display-none">
-                        <div class="col-lg-11 mx-auto">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="card">
-                                        <div class="card-body table-responsive p-0">
-                                            <table class="table table-hover">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Submitted on</th>
-                                                        <th>Claim No</th>
-                                                        <th>Expense Title</th>
-                                                        <th>Submitted Amount</th>
-                                                        <th>Approved Amount</th>
-                                                        <th>Remark</th>
-                                                        <th>Status</th>
-                                                        <th>View</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>13 Jan 20</td>
-                                                        <td>1490</td>
-                                                        <td>Bangalore Trip</td>
-                                                        <td>$1,560</td>
-                                                        <td>$1,257</td>
-                                                        <td>NA</td>
-                                                        <td><span class="status-reimbursed"></span>reimbursed</td>
-                                                        <td class="btn_action">
-                                                            <button class="btn btn-view-table table-btn"><i class="fa fa-eye"></i></button>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <!-- /.card-body -->
-                                    </div>
-                                    <!-- /.card -->
-                                </div>
-                            </div> 
-                        </div>
-                    </div>
-                <!-- END TABLE tableReimbursed-->
+                <!-- END TABLE APPROVED-->
 
                 <!-- TABLE APPROVAL PANEL-->
 
@@ -847,22 +653,14 @@ crossorigin="anonymous"></script>
         $('.tablePendingApproval').hide();
         $('.tableApproved').hide();
         $(this).addClass('activeBtn');
-        if ($(this).hasClass('activeBtn')) {
-            $(this).css({'color':'#0870B4'})
-        }
     });
 
     $(document.body).on('click', '.btnTablePendingApproval', function(){
         $('.animated-button.thar-four').removeClass('activeBtn');
         $('.tableDraft').hide();
         $('.tablePendingApproval').show();
-        $('.tableReimbursed').hide();
-
         $('.tableApproved').hide();
         $(this).addClass('activeBtn');
-        if ($(this).hasClass('activeBtn')) {
-            $(this).css({'color':'#0870B4'})
-        }
 
     });
 
@@ -870,25 +668,8 @@ crossorigin="anonymous"></script>
         $('.animated-button.thar-four').removeClass('activeBtn');
         $('.tableDraft').hide();
         $('.tablePendingApproval').hide();
-        $('.tableReimbursed').hide();
         $('.tableApproved').show();
         $(this).addClass('activeBtn');
-        if ($(this).hasClass('activeBtn')) {
-            $(this).css({'color':'#0870B4'})
-        }
-
-    });
-
-    $(document.body).on('click', '.btnTableReimbursed', function(){
-        $('.animated-button.thar-four').removeClass('activeBtn');
-        $('.tableDraft').hide();
-        $('.tablePendingApproval').hide();
-        $('.tableApproved').hide();
-        $('.tableReimbursed').show();
-        $(this).addClass('activeBtn');
-        if ($(this).hasClass('activeBtn')) {
-            $(this).css({'color':'#0870B4'})
-        }
 
     });
     //go to approver page

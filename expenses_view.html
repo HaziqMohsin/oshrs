@@ -10,7 +10,7 @@
 	<!-- CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
-	<link rel="stylesheet" href="css/expense_add.css" type="text/css">
+	<link rel="stylesheet" href="css/expense_view.css" type="text/css">
 	<!-- CSS -->
 	
 	<!-- font -->
@@ -137,27 +137,28 @@
 							<main class="col-lg-10 col-md-10 col-xl-10 add-content mx-auto" role="main">
                                 <div class="container-ta">
                                     <div class="row form-type">
-                                        <div class="col-md-3">
-                                            <div class="form-group expense-form-text">
-                                                <label for="exampleFormControlSelect1">Expense Title</label>
-                                                <input type="text" class="form-control form-text" id="">
+                                        <div class="col-md-7">
+                                            <h5 class="user-detail">John Michael - JM001</h5>
+                                            <p class="user-id">Expense ID: 4192</p>
+                                            <div class="form-group expense-form-left">
+                                                <span for="exampleFormControlSelect1">Department Code</span>
+                                                <input type="text" class="form-control form-text" value="">
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        
+                                        <div class="col-md-5">
                                             <div class="form-group expense-form-text">
-                                                <label for="exampleFormControlSelect1">Department Code</label>
-                                                <input type="text" class="form-control form-text" id="">
+                                                <span for="exampleFormControlSelect1">Expense Title</span>
+                                                <input type="text" class="form-control form-text currency-field" value="Bangalore Trip">
                                             </div>
-                                        </div>
-                                        <div class="col-md-4">
                                             <div class="form-group expense-form-text">
-                                                <label for="exampleFormControlSelect1">Total Claim Amount</label>
-                                                <input type="text" class="form-control form-text" style="width: 50%;" id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="$00:0000">
+                                                <span for="exampleFormControlSelect1">Total Claim Amount</span>
+                                                <input type="text" class="form-control form-text currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="$00:0000">
                                             </div>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <button type="button" class="btn btn-save">SAVE</button>
-                                            <button type="button" class="btn btn-submit">SUBMIT</button>
+                                            <div class="form-group expense-form-text">
+                                                <span for="exampleFormControlSelect1">Total Claim Amount</span>
+                                                <input type="text" class="form-control form-text currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="$00:0000">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -174,12 +175,12 @@
                                                                 <th>Receipt No</th>
                                                                 <th>Expense Type</th>
                                                                 <th>Expense Country & Currency</th>
-                                                                <th>Expense Item Amount ($)</th>
-                                                                <th>Exchange Rate</th>
-                                                                <th>Home Currency Amount (xxx)</th>
+                                                                <th>Claim Amount</th>
+                                                                <th>Employee Remarks</th>
                                                                 <th>Receipt</th>
+                                                                <th>Approved Amount</th>
                                                                 <th>Remarks</th>
-                                                                <th>Edit / Remove</th>
+                                                                <th>Approve/Reject</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
@@ -227,15 +228,16 @@
                                                                         <input type="text" class="form-control">
                                                                     </div>
                                                                 </td>
-                                                                <td>$ <span class="homeCurrencyAmount">xxx</span></td>
                                                                 <td>
                                                                     <div class="input-group">
                                                                         <div class="input-group-prepend">
-                                                                            <span class="input-group-text" id="inputGroupPrependReceipt"><i class="fa fa-paperclip" aria-hidden="true"></i></span>
+                                                                            <input type="hidden" type="file" class="uploadImage" />
+                                                                            <span class="input-group-text uploadBtn" id="inputGroupPrependReceipt"><i class="fa fa-paperclip" aria-hidden="true"></i></span>
                                                                             <span class="" style="padding-left: 5px;"aria-describedby="inputGroupPrependReceipt"></span>
                                                                         </div>
                                                                     </div>
                                                                 </td>
+                                                                <td>$ <span class="homeCurrencyAmount">xxx</span></td>
                                                                 <td>
                                                                     <div class="form-group">
                                                                         <input type="text" class="form-control">
@@ -290,18 +292,19 @@
                                                                         <input type="text" class="form-control" value="17">
                                                                     </div>
                                                                 </td>
-                                                                <td>$ <span class="homeCurrencyAmount"> 863</span></td>
                                                                 <td>
                                                                     <div class="input-group">
                                                                         <div class="input-group-prepend">
-                                                                            <span class="input-group-text" id="inputGroupPrependReceipt"><i class="fa fa-paperclip" aria-hidden="true"></i></span>
+                                                                            <input type="hidden" type="file" class="uploadImage" />
+                                                                            <span class="input-group-text uploadBtn" id="inputGroupPrependReceipt"><i class="fa fa-paperclip" aria-hidden="true"></i></span>
                                                                             <span class="" style="padding-left: 5px;"aria-describedby="inputGroupPrependReceipt">jan.pdf</span>
                                                                         </div>
                                                                     </div>
                                                                 </td>
+                                                                <td>$ <span class="homeCurrencyAmount">xxx</span></td>
                                                                 <td>
                                                                     <div class="form-group">
-                                                                        <input type="text" class="form-control" value="travel insurance">
+                                                                        <input type="text" class="form-control" value="">
                                                                     </div>
                                                                 </td>
                                                                 <td class="btn_action">
@@ -309,40 +312,6 @@
                                                                     <button class="btn btn-delete-table table-btn"><img src="/img/expense/delete.png"/></button>
                                                                 </td>
 															</tr>
-															<tr>
-                                                                <td>
-                                                                    12 Jan 2020
-                                                                </td>
-                                                                <td>
-                                                                    BH12345
-                                                                </td>
-                                                                <td>
-                                                                    TRAVEL
-                                                                </td>
-                                                                <td>
-                                                                    INDIA-INR
-                                                                </td>
-                                                                <td>
-                                                                    50
-                                                                </td>
-                                                                <td>
-                                                                    17
-                                                                </td>
-                                                                <td>$ <span class="homeCurrencyAmount"> 863</span></td>
-                                                                <td>
-                                                                    <div class="input-group">
-                                                                        <div class="input-group-prepend">
-                                                                            <span class="" style="padding-left: 5px;"aria-describedby="inputGroupPrependReceipt">jan.pdf</span>
-                                                                        </div>
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    travel insurance
-                                                                </td>
-                                                                <td class="btn_action">
-                                                                    <button class="btn btn-edit-add-table table-btn"><img src="/img/expense/editAccount.png"/></button>
-                                                                </td>
-                                                            </tr>
                                                         </tbody>
 													</table>
 													
@@ -356,7 +325,7 @@
 								
 								<div class="container-ta">
 									<div>
-										<button type="button" class="btn btn-add-expense">Add Expense</button>
+										<button type="button" class="btn btn-add-expense">SUBMIT</button>
 									</div>
 								</div>
 								
@@ -504,6 +473,11 @@
 					<!-- MODAL ANIMATION SCRIPT -->
 					
 					<!-- view more function -->
+                    <script>
+                        $('.uploadBtn').on('click', function(){
+                            $(this).closest('.uploadImage').trigger('click');
+                        })
+                    </script>
 					<script>
 						$('.expand-button').on('click', function(){
 							$('.special-text').toggleClass('-expanded');

@@ -16,13 +16,16 @@
     background-color: rgba(225,225,225,0.3);
 }
 .cost-circle{
-    width: 85px;
-    height: 85px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
-    background-color: #FBFBFB;
+    background-color: #FFF;
+    background-image: url(../svg/approverBag.svg);
+    background-repeat: no-repeat;
+    background-position: center;
     border: 1px solid rgba(194, 152, 154, 0.43);
     position: relative;
-    vertical-align: middle;
+    vertical-align: top;
 }
 .cost-circle > h4{
     position: absolute;
@@ -130,4 +133,13 @@
 
 .tab-card.select > div > div > h4, .tab-card.select > div > div > p{
     color: #fff !important;
+}
+
+.pending-size{
+    height: 100%;
+    max-height: none;
+}
+
+.pending-header{
+    margin-bottom: 30px;
 }
